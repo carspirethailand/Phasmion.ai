@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ความสามารถทั้งหมด — Cendon</title>
+<meta name="description" content="ทุกอย่างที่ Cendon ทำได้ อธิบายทีละอย่าง พร้อมข้อจำกัดที่ควรรู้ก่อนใช้">
+<meta name="theme-color" content="#07080B">
+<meta property="og:title" content="ความสามารถทั้งหมด — Cendon">
+<meta property="og:description" content="ทุกอย่างที่ Cendon ทำได้ อธิบายทีละอย่าง พร้อมข้อจำกัดที่ควรรู้ก่อนใช้">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/phasmion-tiny.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/Spire09-Medium.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<!-- ฟอนต์ไทยโหลดแบบไม่บล็อกการวาดหน้า ถ้าโหลดไม่ได้ก็ตกไปใช้ฟอนต์ระบบ -->
+<link rel="stylesheet" media="print" onload="this.media='all'"
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap">
+<noscript><link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap"></noscript>
+<noscript><style>
+  /* ถ้าสคริปต์ไม่ทำงาน เนื้อหาต้องยังอ่านได้ครบ ห้ามหายไปทั้งหน้า */
+  .rv{opacity:1!important;transform:none!important}
+  .pop{opacity:1!important;transform:none!important}
+  .dash{stroke-dashoffset:0!important}
+  .grow{transform:none!important}
+</style></noscript>
+</head>
+<body>
+<a class="skip" href="#main" data-th="ข้ามไปเนื้อหา" data-en="Skip to content">ข้ามไปเนื้อหา</a>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="index.html" aria-label="Cendon">
+      <svg class="mk" viewBox="0 0 200 200" fill="currentColor" aria-hidden="true"><path d="M99.6 83.0 108.3 83.0 111.5 83.1 113.6 83.3 115.0 83.5 115.9 83.7 116.4 83.8 116.6 83.8 116.6 83.8 116.5 83.7 116.4 83.5 116.3 83.3 116.3 83.3 116.5 83.4 116.7 83.9 116.9 84.7 117.2 86.0 117.5 88.0 117.7 90.9 117.9 96.5 117.9 107.5 117.8 111.0 117.6 113.3 117.4 114.9 117.2 116.0 117.0 116.6 116.9 117.0 116.9 117.1 117.0 117.1 117.1 117.0 117.2 117.0 117.2 117.1 117.0 117.2 116.5 117.4 115.7 117.7 114.4 118.0 112.6 118.3 109.8 118.6 105.1 118.7 93.6 118.7 89.5 118.7 87.0 118.5 85.2 118.3 84.0 118.1 83.2 117.9 82.7 117.7 82.4 117.6 82.4 117.6 82.3 117.7 82.3 117.7 82.2 117.6 82.0 117.4 81.8 117.0 81.5 116.1 81.2 114.9 80.9 113.1 80.6 110.5 80.5 106.4 80.4 94.9 80.5 90.1 80.6 87.3 80.8 85.4 81.0 84.0 81.3 83.0 82.0 81.0 L53.4 71.3 52.5 73.3 51.5 76.8 50.7 80.5 50.1 84.4 49.8 88.9 49.6 94.7 49.6 106.7 49.7 112.1 50.0 116.4 50.5 120.3 51.3 124.0 52.3 127.5 53.7 130.9 55.4 134.2 57.5 137.3 59.9 140.1 62.7 142.6 65.7 144.7 68.9 146.6 72.3 148.0 75.9 149.2 79.6 150.0 83.5 150.6 87.9 151.0 93.3 151.2 105.3 151.3 111.2 151.2 115.7 150.9 119.7 150.5 123.5 149.7 127.1 148.7 130.6 147.4 134.0 145.7 137.2 143.6 140.1 141.2 142.8 138.4 145.1 135.4 147.0 132.1 148.6 128.7 149.8 125.1 150.7 121.3 151.4 117.4 151.8 113.1 152.1 107.9 152.1 96.4 152.1 89.8 151.9 85.1 151.4 81.0 150.7 77.1 149.8 73.3 148.5 69.7 146.8 66.2 144.8 62.9 142.4 59.9 139.6 57.1 136.5 54.6 133.2 52.6 129.7 50.9 126.0 49.6 122.3 48.6 118.3 47.9 114.1 47.4 109.1 47.1 100.4 47.0Z"/><path d="M162.3 69.9 162.9 78.9 163.1 93.5 163.0 118.3 162.7 127.3 162.1 133.8 161.3 138.9 160.4 143.0 159.3 146.3 158.2 149.1 156.9 151.3 155.5 153.2 154.0 154.9 152.3 156.4 150.3 157.8 147.8 159.1 144.8 160.3 141.0 161.4 136.4 162.3 130.6 163.1 123.0 163.6 110.9 163.9 84.1 163.9 74.2 163.6 67.3 163.1 61.9 162.4 57.5 161.4 54.0 160.4 51.1 159.2 48.6 157.9 46.6 156.5 44.8 155.0 43.2 153.2 41.8 151.2 40.4 148.7 39.1 145.7 38.0 142.1 37.0 137.6 36.2 132.0 35.6 124.8 35.2 114.1 35.2 86.9 35.4 75.8 35.9 68.4 36.6 62.7 37.5 58.1 38.6 54.4 39.8 51.2 41.1 48.6 42.5 46.4 44.1 44.6 45.9 42.9 47.9 41.3 50.4 39.9 53.3 38.6 56.9 37.4 61.3 36.3 66.7 35.5 73.6 34.8 83.2 34.4 109.6 34.3 122.4 34.5 130.3 34.9 136.4 35.6 142.4 36.7 L146.9 6.8 140.9 5.6 133.0 4.6 123.5 4.0 109.7 3.7 82.9 3.7 71.8 4.1 63.1 4.8 55.6 5.9 48.8 7.4 42.4 9.4 36.6 11.9 31.1 14.9 26.0 18.5 21.5 22.6 17.4 27.3 13.9 32.4 10.9 38.0 8.5 44.0 6.5 50.4 5.0 57.4 3.9 65.2 3.2 74.4 2.9 86.7 2.8 114.3 3.1 126.3 3.8 135.3 4.8 143.1 6.2 150.1 8.1 156.6 10.6 162.7 13.5 168.3 17.1 173.5 21.2 178.3 25.8 182.5 30.9 186.2 36.4 189.3 42.4 191.9 48.9 194.0 55.8 195.6 63.5 196.7 72.4 197.5 83.7 197.9 111.0 198.0 124.3 197.8 133.7 197.3 141.8 196.3 149.0 194.9 155.6 193.1 161.8 190.7 167.6 187.9 173.0 184.4 177.9 180.3 182.3 175.7 186.2 170.7 189.5 165.1 192.2 159.1 194.4 152.7 196.1 145.8 197.4 138.2 198.3 129.6 198.7 118.9 198.9 93.4 198.8 77.9 198.3 68.9Z"/></svg>
+      <span class="wm">Cendon</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html"   data-th="หน้าแรก"    data-en="Home">หน้าแรก</a>
+      <a href="features.html" aria-current="page" data-th="ความสามารถ" data-en="What it does">ความสามารถ</a>
+      <a href="guide.html"   data-th="คู่มือใช้งาน" data-en="Guide">คู่มือใช้งาน</a>
+      <a href="about.html"   data-th="ความเป็นมา"  data-en="About">ความเป็นมา</a>
+      <a href="help.html"    data-th="ช่วยเหลือ"   data-en="Help">ช่วยเหลือ</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang" role="group" data-th-aria="เลือกภาษา" data-en-aria="Choose language">
+        <button data-l="th" type="button">ไทย</button><button data-l="en" type="button">EN</button>
+      </div>
+      <a class="btn btn-solid" href="https://spireone.pages.dev/" target="_blank" rel="noopener"
+         data-th="เปิดแอป" data-en="Open the app">เปิดแอป</a>
+      <button class="burger" type="button" aria-expanded="false"
+              data-th-aria="เมนู" data-en-aria="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<section class="sec-tight" style="padding-top:clamp(46px,8vw,90px)">
+  <div class="wrap">
+    <div class="rv" style="max-width:64ch">
+      <p class="eyebrow" data-th="ความสามารถ" data-en="What it does">ความสามารถ</p>
+      <h1 data-th="ทุกอย่างที่ Cendon ทำได้" data-en="Everything Cendon does">ทุกอย่างที่ Cendon ทำได้</h1>
+      <p class="lede" style="margin-top:20px"
+         data-th="อธิบายทีละอย่างตามจริง รวมถึงข้อจำกัดที่ควรรู้ก่อนใช้ เพราะการรู้ว่าอะไรเชื่อได้แค่ไหน สำคัญพอ ๆ กับตัวความสามารถเอง"
+         data-en="One at a time, honestly — including the limits. Knowing how far to trust something matters as much as the feature itself.">
+        อธิบายทีละอย่างตามจริง รวมถึงข้อจำกัดที่ควรรู้ก่อนใช้ เพราะการรู้ว่าอะไรเชื่อได้แค่ไหน สำคัญพอ ๆ กับตัวความสามารถเอง</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec-tight" style="padding-top:0">
+  <div class="wrap">
+
+    <!-- ผู้ช่วย -->
+    <div class="feat">
+      <div class="rv">
+        <p class="eyebrow" data-th="01 · ผู้ช่วยวินิจฉัย" data-en="01 · Diagnosis">01 · ผู้ช่วยวินิจฉัย</p>
+        <h2 data-th="เล่าอาการ แล้วได้สาเหตุที่เป็นไปได้" data-en="Describe it, get ranked causes">
+          เล่าอาการ แล้วได้สาเหตุที่เป็นไปได้</h2>
+        <p class="dim" style="margin-top:14px"
+           data-th="พิมพ์ด้วยภาษาปกติ ไม่ต้องรู้ศัพท์ช่าง ระบบจะถามกลับจนได้ข้อมูลพอ แล้วเรียงสาเหตุที่เป็นไปได้ให้ พร้อมบอกว่าอันไหนควรรีบและอันไหนรอได้"
+           data-en="Type it however you would say it. It asks follow-ups until it has enough, then ranks the likely causes and tells you which are urgent.">
+          พิมพ์ด้วยภาษาปกติ ไม่ต้องรู้ศัพท์ช่าง ระบบจะถามกลับจนได้ข้อมูลพอ แล้วเรียงสาเหตุที่เป็นไปได้ให้ พร้อมบอกว่าอันไหนควรรีบและอันไหนรอได้</p>
+        <ul>
+          <li data-th="แนบรูปหรือเสียงเข้าไปในบทสนทนาเดียวกันได้" data-en="Attach a photo or a recording in the same thread">แนบรูปหรือเสียงเข้าไปในบทสนทนาเดียวกันได้</li>
+          <li data-th="จำบริบทของบทสนทนา ถามต่อเนื่องได้" data-en="Keeps context so you can keep asking">จำบริบทของบทสนทนา ถามต่อเนื่องได้</li>
+          <li data-th="เก็บบทสนทนาไว้ กลับมาอ่านทีหลังได้" data-en="Conversations are kept for later">เก็บบทสนทนาไว้ กลับมาอ่านทีหลังได้</li>
+        </ul>
+      </div>
+      <div class="feat-art"><svg viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="art-chat">
+<defs>
+  <linearGradient id="ph" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#1B212C"/><stop offset="1" stop-color="#0C0F15"/>
+  </linearGradient>
+</defs>
+<rect x="112" y="18" width="176" height="284" rx="30" fill="url(#ph)" stroke="rgba(255,255,255,.13)"/>
+<rect x="122" y="28" width="156" height="264" rx="22" fill="#0A0D12"/>
+<rect x="176" y="34" width="48" height="7" rx="3.5" fill="rgba(255,255,255,.13)"/>
+
+<!-- ฟองคำถามจากผู้ใช้ -->
+<g class="pop pop-d1">
+  <rect x="168" y="58" width="100" height="34" rx="14" fill="var(--warm)" opacity=".92"/>
+  <rect x="180" y="69" width="64" height="4.5" rx="2.25" fill="#25120A" opacity=".72"/>
+  <rect x="180" y="79" width="42" height="4.5" rx="2.25" fill="#25120A" opacity=".5"/>
+</g>
+<!-- ฟองคำตอบ -->
+<g class="pop pop-d2">
+  <rect x="132" y="102" width="126" height="58" rx="14" fill="#161B24" stroke="rgba(255,255,255,.13)"/>
+  <rect x="144" y="115" width="94" height="4.5" rx="2.25" fill="rgba(255,255,255,.34)"/>
+  <rect x="144" y="127" width="78" height="4.5" rx="2.25" fill="rgba(255,255,255,.34)" opacity=".7"/>
+  <rect x="144" y="139" width="56" height="4.5" rx="2.25" fill="rgba(255,255,255,.34)" opacity=".45"/>
+</g>
+<!-- การ์ดสาเหตุที่เป็นไปได้ -->
+<g class="pop pop-d3">
+  <rect x="132" y="172" width="126" height="66" rx="12" fill="#12161E" stroke="rgba(255,255,255,.13)"/>
+  <circle cx="147" cy="188" r="5" fill="var(--warm)"/>
+  <rect x="160" y="185" width="70" height="4.5" rx="2.25" fill="rgba(255,255,255,.34)"/>
+  <circle cx="147" cy="206" r="5" fill="var(--warm)" opacity=".55"/>
+  <rect x="160" y="203" width="54" height="4.5" rx="2.25" fill="rgba(255,255,255,.34)" opacity=".6"/>
+  <circle cx="147" cy="224" r="5" fill="var(--warm)" opacity=".28"/>
+  <rect x="160" y="221" width="62" height="4.5" rx="2.25" fill="rgba(255,255,255,.34)" opacity=".38"/>
+</g>
+<!-- ช่องพิมพ์ + ปุ่มคลื่นเสียง -->
+<g class="pop pop-d4">
+  <rect x="132" y="252" width="94" height="30" rx="15" fill="#12161E" stroke="rgba(255,255,255,.13)"/>
+  <rect x="144" y="265" width="46" height="4.5" rx="2.25" fill="rgba(255,255,255,.34)" opacity=".5"/>
+  <circle cx="248" cy="267" r="15" fill="var(--warm)"/>
+  <g stroke="#25120A" stroke-width="2.2" stroke-linecap="round" class="wv">
+    <path d="M242 263v8"/><path d="M248 259v16"/><path d="M254 264v6"/>
+  </g>
+</g>
+
+<!-- คลื่นเสียงลอยด้านซ้าย -->
+<g class="bars" stroke="var(--warm-lo)" stroke-width="4" stroke-linecap="round" opacity=".85">
+  <path d="M34 168v-26"/><path d="M50 176v-42"/><path d="M66 162v-14"/>
+  <path d="M82 180v-50"/>
+</g>
+<text x="34" y="212" fill="rgba(255,255,255,.34)" font-size="11" font-family="ui-sans-serif,system-ui">
+  <tspan>0:07</tspan></text>
+</svg></div>
+    </div>
+
+    <!-- Chat Flow -->
+    <div class="feat">
+      <div class="rv">
+        <p class="eyebrow" data-th="02 · Chat Flow" data-en="02 · Chat Flow">02 · Chat Flow</p>
+        <h2 data-th="แยกคำตอบเป็นห้ามุม" data-en="The answer, split five ways">แยกคำตอบเป็นห้ามุม</h2>
+        <p class="dim" style="margin-top:14px"
+           data-th="แทนที่จะได้ข้อความยาวก้อนเดียว คำตอบจะถูกจัดเป็นแท็บให้เลือกดูเฉพาะที่ต้องการ"
+           data-en="Instead of one long block, the answer is organised into tabs so you read only what you need.">
+          แทนที่จะได้ข้อความยาวก้อนเดียว คำตอบจะถูกจัดเป็นแท็บให้เลือกดูเฉพาะที่ต้องการ</p>
+        <table class="tbl" style="margin-top:16px">
+          <tr><td data-th="สาเหตุที่เป็นไปได้" data-en="Causes">สาเหตุที่เป็นไปได้</td>
+              <td class="dim" data-th="เรียงจากน่าจะใช่ที่สุด พร้อมสิ่งที่ควรตรวจก่อน"
+                  data-en="Ranked most-likely first, with what to check">เรียงจากน่าจะใช่ที่สุด พร้อมสิ่งที่ควรตรวจก่อน</td></tr>
+          <tr><td data-th="รายงาน" data-en="Report">รายงาน</td>
+              <td class="dim" data-th="สรุปแบบส่งต่อให้คนอื่นอ่านรู้เรื่อง"
+                  data-en="A summary someone else can read">สรุปแบบส่งต่อให้คนอื่นอ่านรู้เรื่อง</td></tr>
+          <tr><td data-th="เตรียมเข้าอู่" data-en="Shop brief">เตรียมเข้าอู่</td>
+              <td class="dim" data-th="ควรบอกช่างว่าอะไร และควรถามกลับว่าอะไร"
+                  data-en="What to tell the garage, what to ask back">ควรบอกช่างว่าอะไร และควรถามกลับว่าอะไร</td></tr>
+          <tr><td data-th="ที่มาของคำตอบ" data-en="Reasoning">ที่มาของคำตอบ</td>
+              <td class="dim" data-th="เปิดดูได้ว่าใช้อะไรมาสรุป จะได้เถียงได้ถ้าไม่เห็นด้วย"
+                  data-en="See what it based the answer on, so you can push back">เปิดดูได้ว่าใช้อะไรมาสรุป จะได้เถียงได้ถ้าไม่เห็นด้วย</td></tr>
+          <tr><td data-th="ไทม์ไลน์" data-en="Timeline">ไทม์ไลน์</td>
+              <td class="dim" data-th="อาการนี้เคยเกิดเมื่อไหร่ ซ่อมอะไรไปแล้วบ้าง"
+                  data-en="When this happened before, and what was done">อาการนี้เคยเกิดเมื่อไหร่ ซ่อมอะไรไปแล้วบ้าง</td></tr>
+        </table>
+      </div>
+      <div class="feat-art"><svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" >
+<rect x="20" y="20" width="360" height="240" rx="16" fill="#0C1016" stroke="rgba(255,255,255,.13)"/>
+<g class="pop pop-d1"><rect x="40" y="38" width="78" height="30" rx="15" fill="var(--warm)" stroke="none"/><rect x="52" y="51" width="54" height="5" rx="2.5" fill="#1A0B04" opacity=".8"/></g><g class="pop pop-d2"><rect x="127" y="38" width="78" height="30" rx="15" fill="#151A24" stroke="rgba(255,255,255,.13)"/><rect x="139" y="51" width="54" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".8"/></g><g class="pop pop-d3"><rect x="214" y="38" width="134" height="30" rx="15" fill="#151A24" stroke="rgba(255,255,255,.13)"/><rect x="226" y="51" width="110" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".8"/></g><g class="pop pop-d4"><rect x="357" y="38" width="70" height="30" rx="15" fill="#151A24" stroke="rgba(255,255,255,.13)"/><rect x="369" y="51" width="46" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".8"/></g><g class="pop pop-d4"><rect x="436" y="38" width="94" height="30" rx="15" fill="#151A24" stroke="rgba(255,255,255,.13)"/><rect x="448" y="51" width="70" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".8"/></g>
+<g class="pop pop-d4">
+  <rect x="40" y="88" width="320" height="1" fill="rgba(255,255,255,.13)"/>
+  <circle cx="56" cy="116" r="7" fill="var(--warm)"/>
+  <rect x="74" y="106" width="180" height="6" rx="3" fill="rgba(255,255,255,.34)"/>
+  <rect x="74" y="120" width="240" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".45"/>
+  <circle cx="56" cy="160" r="7" fill="var(--warm)" opacity=".6"/>
+  <rect x="74" y="150" width="146" height="6" rx="3" fill="rgba(255,255,255,.34)" opacity=".8"/>
+  <rect x="74" y="164" width="214" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".35"/>
+  <circle cx="56" cy="204" r="7" fill="var(--warm)" opacity=".3"/>
+  <rect x="74" y="194" width="122" height="6" rx="3" fill="rgba(255,255,255,.34)" opacity=".55"/>
+  <rect x="74" y="208" width="188" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".25"/>
+</g>
+</svg></div>
+    </div>
+
+    <!-- ฟังเสียง -->
+    <div class="feat">
+      <div class="rv">
+        <p class="eyebrow" data-th="03 · ฟังเสียงรถ" data-en="03 · Listen">03 · ฟังเสียงรถ</p>
+        <h2 data-th="อัดเสียงจริง ดีกว่าเลียนเสียง" data-en="Record it instead of imitating it">
+          อัดเสียงจริง ดีกว่าเลียนเสียง</h2>
+        <p class="dim" style="margin-top:14px"
+           data-th="เสียงผิดปกติอธิบายด้วยคำพูดยาก อัดไว้ตอนที่มันดังจริงแล้วส่งให้ดู ระบบจะช่วยแยกว่าน่าจะมาจากส่วนไหน และช่วยให้คุณเปิดให้ช่างฟังได้ตรง ๆ"
+           data-en="Odd noises are hard to put into words. Record it while it is happening; the system helps narrow down where it comes from — and you can simply play it to the mechanic.">
+          เสียงผิดปกติอธิบายด้วยคำพูดยาก อัดไว้ตอนที่มันดังจริงแล้วส่งให้ดู ระบบจะช่วยแยกว่าน่าจะมาจากส่วนไหน และช่วยให้คุณเปิดให้ช่างฟังได้ตรง ๆ</p>
+        <div class="note">
+          <p data-th-html="<b>ข้อจำกัด</b> — เสียงลม เสียงถนน และไมค์ของแต่ละเครื่องต่างกันมาก ผลที่ได้จึงเป็นการชี้ทิศทาง ไม่ใช่คำวินิจฉัยสุดท้าย"
+             data-en-html="<b>Limit</b> — wind, road noise and phone microphones vary hugely. Treat the result as a direction to look in, not a final diagnosis."><b>ข้อจำกัด</b> — เสียงลม เสียงถนน และไมค์ของแต่ละเครื่องต่างกันมาก ผลที่ได้จึงเป็นการชี้ทิศทาง ไม่ใช่คำวินิจฉัยสุดท้าย</p>
+        </div>
+      </div>
+      <div class="feat-art"><svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="art-listen">
+<rect x="14" y="40" width="372" height="200" rx="18" fill="#0C1016" stroke="rgba(255,255,255,.13)"/>
+<g class="eq"><rect x="30.0" y="134.0" width="4.4" height="12.0" rx="2.2" fill="var(--warm)" opacity="0.32" style="--i:0"/><rect x="40.2" y="114.8" width="4.4" height="50.4" rx="2.2" fill="var(--warm)" opacity="0.46" style="--i:1"/><rect x="50.4" y="100.4" width="4.4" height="79.3" rx="2.2" fill="var(--warm)" opacity="0.60" style="--i:2"/><rect x="60.6" y="103.1" width="4.4" height="73.8" rx="2.2" fill="var(--warm)" opacity="0.74" style="--i:3"/><rect x="70.8" y="105.9" width="4.4" height="68.1" rx="2.2" fill="var(--warm)" opacity="0.88" style="--i:4"/><rect x="81.0" y="116.2" width="4.4" height="47.7" rx="2.2" fill="var(--warm)" opacity="0.32" style="--i:5"/><rect x="91.2" y="129.1" width="4.4" height="21.8" rx="2.2" fill="var(--warm)" opacity="0.46" style="--i:6"/><rect x="101.4" y="110.8" width="4.4" height="58.3" rx="2.2" fill="var(--warm)" opacity="0.60" style="--i:7"/><rect x="111.6" y="98.5" width="4.4" height="83.0" rx="2.2" fill="var(--warm)" opacity="0.74" style="--i:8"/><rect x="121.8" y="103.9" width="4.4" height="72.3" rx="2.2" fill="var(--warm)" opacity="0.88" style="--i:9"/><rect x="132.0" y="109.1" width="4.4" height="61.7" rx="2.2" fill="var(--warm)" opacity="0.32" style="--i:10"/><rect x="142.2" y="120.8" width="4.4" height="38.3" rx="2.2" fill="var(--warm)" opacity="0.46" style="--i:11"/><rect x="152.4" y="124.3" width="4.4" height="31.3" rx="2.2" fill="var(--warm)" opacity="0.60" style="--i:12"/><rect x="162.6" y="107.4" width="4.4" height="65.3" rx="2.2" fill="var(--warm)" opacity="0.74" style="--i:13"/><rect x="172.8" y="97.4" width="4.4" height="85.3" rx="2.2" fill="var(--warm)" opacity="0.88" style="--i:14"/><rect x="183.0" y="105.4" width="4.4" height="69.2" rx="2.2" fill="var(--warm)" opacity="0.32" style="--i:15"/><rect x="193.2" y="112.9" width="4.4" height="54.3" rx="2.2" fill="var(--warm)" opacity="0.46" style="--i:16"/><rect x="203.4" y="125.7" width="4.4" height="28.6" rx="2.2" fill="var(--warm)" opacity="0.60" style="--i:17"/><rect x="213.6" y="119.8" width="4.4" height="40.4" rx="2.2" fill="var(--warm)" opacity="0.74" style="--i:18"/><rect x="223.8" y="104.5" width="4.4" height="71.0" rx="2.2" fill="var(--warm)" opacity="0.88" style="--i:19"/><rect x="234.0" y="97.0" width="4.4" height="86.0" rx="2.2" fill="var(--warm)" opacity="0.32" style="--i:20"/><rect x="244.2" y="107.6" width="4.4" height="64.7" rx="2.2" fill="var(--warm)" opacity="0.46" style="--i:21"/><rect x="254.4" y="117.1" width="4.4" height="45.9" rx="2.2" fill="var(--warm)" opacity="0.60" style="--i:22"/><rect x="264.6" y="125.4" width="4.4" height="29.2" rx="2.2" fill="var(--warm)" opacity="0.74" style="--i:23"/><rect x="274.8" y="115.6" width="4.4" height="48.7" rx="2.2" fill="var(--warm)" opacity="0.88" style="--i:24"/><rect x="285.0" y="102.3" width="4.4" height="75.4" rx="2.2" fill="var(--warm)" opacity="0.32" style="--i:25"/><rect x="295.2" y="97.4" width="4.4" height="85.2" rx="2.2" fill="var(--warm)" opacity="0.46" style="--i:26"/><rect x="305.4" y="110.5" width="4.4" height="58.9" rx="2.2" fill="var(--warm)" opacity="0.60" style="--i:27"/><rect x="315.6" y="121.6" width="4.4" height="36.8" rx="2.2" fill="var(--warm)" opacity="0.74" style="--i:28"/><rect x="325.8" y="120.6" width="4.4" height="38.9" rx="2.2" fill="var(--warm)" opacity="0.88" style="--i:29"/><rect x="336.0" y="111.9" width="4.4" height="56.1" rx="2.2" fill="var(--warm)" opacity="0.32" style="--i:30"/><rect x="346.2" y="100.8" width="4.4" height="78.4" rx="2.2" fill="var(--warm)" opacity="0.46" style="--i:31"/><rect x="356.4" y="98.6" width="4.4" height="82.8" rx="2.2" fill="var(--warm)" opacity="0.60" style="--i:32"/><rect x="366.6" y="114.0" width="4.4" height="51.9" rx="2.2" fill="var(--warm)" opacity="0.74" style="--i:33"/></g>
+<path d="M30 140h340" stroke="rgba(255,255,255,.13)"/>
+<g class="pop pop-d2">
+  <rect x="122" y="252" width="156" height="40" rx="20" fill="#161B24" stroke="rgba(255,255,255,.13)"/>
+  <circle cx="148" cy="272" r="11" fill="var(--warm)"/>
+  <rect x="145" y="267" width="6" height="10" rx="3" fill="#1A0B04"/>
+  <rect x="170" y="264" width="86" height="5" rx="2.5" fill="rgba(255,255,255,.34)"/>
+  <rect x="170" y="276" width="52" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".5"/>
+</g>
+<g class="pop pop-d3">
+  <rect x="252" y="60" width="118" height="52" rx="12" fill="#151A24" stroke="rgba(255,255,255,.13)"/>
+  <rect x="268" y="76" width="60" height="5" rx="2.5" fill="var(--warm-lo)"/>
+  <rect x="268" y="90" width="86" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".55"/>
+</g>
+</svg></div>
+    </div>
+
+    <!-- วัดสั่น -->
+    <div class="feat">
+      <div class="rv">
+        <p class="eyebrow" data-th="04 · วัดอาการสั่น" data-en="04 · Measure the shake">04 · วัดอาการสั่น</p>
+        <h2 data-th="แยกว่าสั่นจากล้อ หรือจากเครื่อง" data-en="Wheels, or engine?">
+          แยกว่าสั่นจากล้อ หรือจากเครื่อง</h2>
+        <p class="dim" style="margin-top:14px"
+           data-th="วางมือถือไว้ในรถแล้วขับตามปกติ เซ็นเซอร์ในเครื่องจะจับความถี่ของการสั่น อาการที่มาจากล้อกับที่มาจากเครื่องมีจังหวะต่างกัน ระบบใช้ตรงนี้ช่วยชี้"
+           data-en="Leave the phone in the car and drive normally. Its sensors read the frequency of the vibration — wheel-borne and engine-borne shakes have different signatures.">
+          วางมือถือไว้ในรถแล้วขับตามปกติ เซ็นเซอร์ในเครื่องจะจับความถี่ของการสั่น อาการที่มาจากล้อกับที่มาจากเครื่องมีจังหวะต่างกัน ระบบใช้ตรงนี้ช่วยชี้</p>
+        <div class="note">
+          <p data-th-html="<b>ความปลอดภัย</b> — ตั้งค่าให้เรียบร้อยก่อนออกรถ อย่าจับมือถือระหว่างขับ"
+             data-en-html="<b>Safety</b> — set it up before you move off. Never handle the phone while driving."><b>ความปลอดภัย</b> — ตั้งค่าให้เรียบร้อยก่อนออกรถ อย่าจับมือถือระหว่างขับ</p>
+        </div>
+      </div>
+      <div class="feat-art"><svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="art-shake">
+<rect x="14" y="18" width="372" height="176" rx="16" fill="#0C1016" stroke="rgba(255,255,255,.13)"/>
+<g stroke="rgba(255,255,255,.13)"><path d="M14 62h372M14 106h372M14 150h372"/></g>
+<!-- เส้นกราฟสองเส้น: ล้อกับเครื่อง -->
+<path class="dash" d="M28 106c18-40 30 34 46-2s26 44 44 8 28-52 44-16 26 40 44 6 28-46 44-10 26 34 44 4"
+      stroke="var(--warm)" stroke-width="2.6" stroke-linecap="round"/>
+<path class="dash" d="M28 128c22-14 26 16 46 4s24 20 44 6 28-24 44-8 26 18 44 2 28-20 44-6 26 14 44 2"
+      stroke="rgba(140,190,255,.6)" stroke-width="2" stroke-linecap="round" style="transition-delay:.25s"/>
+<g class="pop pop-d3">
+  <rect x="238" y="206" width="148" height="72" rx="12" fill="#151A24" stroke="rgba(255,255,255,.13)"/>
+  <circle cx="260" cy="230" r="7" fill="var(--warm)"/>
+  <rect x="276" y="226" width="92" height="5" rx="2.5" fill="rgba(255,255,255,.34)"/>
+  <circle cx="260" cy="254" r="7" fill="rgba(140,190,255,.7)"/>
+  <rect x="276" y="250" width="66" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".55"/>
+</g>
+<!-- รถการ์ตูนกำลังสั่น -->
+<g class="shakecar">
+  <path d="M36 262c4-22 12-34 22-38h58c10 4 20 16 24 38z" fill="#161B24" stroke="rgba(255,255,255,.13)"/>
+  <path d="M46 250c3-14 8-20 14-22h48c7 2 13 9 16 22z" fill="#0C1016"/>
+  <rect x="30" y="258" width="156" height="16" rx="8" fill="#161B24" stroke="rgba(255,255,255,.13)"/>
+  <circle cx="64" cy="276" r="13" fill="#0A0D12" stroke="var(--warm)" stroke-width="2.4"/>
+  <circle cx="152" cy="276" r="13" fill="#0A0D12" stroke="rgba(255,255,255,.13)" stroke-width="2.4"/>
+</g>
+</svg></div>
+    </div>
+
+    <!-- ใบเสนอราคา -->
+    <div class="feat">
+      <div class="rv">
+        <p class="eyebrow" data-th="05 · ตรวจใบเสนอราคา" data-en="05 · Check a quote">05 · ตรวจใบเสนอราคา</p>
+        <h2 data-th="อ่านทีละรายการ ก่อนตัดสินใจจ่าย" data-en="Line by line, before you agree">
+          อ่านทีละรายการ ก่อนตัดสินใจจ่าย</h2>
+        <p class="dim" style="margin-top:14px"
+           data-th="ถ่ายรูปใบเสนอราคา ระบบจะเทียบแต่ละรายการกับระยะทางและประวัติของรถคุณ แล้วบอกว่าอันไหนถึงรอบจริง อันไหนควรถามเพิ่มก่อน"
+           data-en="Photograph the quote. Each line is compared against your mileage and history: what is genuinely due, and what deserves a question first.">
+          ถ่ายรูปใบเสนอราคา ระบบจะเทียบแต่ละรายการกับระยะทางและประวัติของรถคุณ แล้วบอกว่าอันไหนถึงรอบจริง อันไหนควรถามเพิ่มก่อน</p>
+        <div class="note">
+          <p data-th-html="<b>สิ่งที่มันไม่ใช่</b> — ไม่ใช่การตัดสินว่าอู่โกง ราคาต่างกันได้ตามพื้นที่ ยี่ห้ออะไหล่ และค่าแรง ให้ใช้เป็นข้อมูลไปคุยกับช่าง"
+             data-en-html="<b>What it is not</b> — an accusation. Prices legitimately differ by area, parts brand and labour. Use it as material for a conversation."><b>สิ่งที่มันไม่ใช่</b> — ไม่ใช่การตัดสินว่าอู่โกง ราคาต่างกันได้ตามพื้นที่ ยี่ห้ออะไหล่ และค่าแรง ให้ใช้เป็นข้อมูลไปคุยกับช่าง</p>
+        </div>
+      </div>
+      <div class="feat-art"><svg viewBox="0 0 400 290" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="art-quote">
+<g class="pop">
+  <path d="M96 22h208a10 10 0 0110 10v226l-16-9-16 9-16-9-16 9-16-9-16 9-16-9-16 9-16-9-16 9-16-9-16 9-16-9-16 9V32a10 10 0 0110-10z"
+        fill="#12161E" stroke="rgba(255,255,255,.13)"/>
+</g>
+<rect x="118" y="46" width="96" height="7" rx="3.5" fill="rgba(255,255,255,.34)" class="pop pop-d1"/>
+<rect x="118" y="62" width="60" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".45" class="pop pop-d1"/>
+
+<g class="pop pop-d2">
+  <rect x="118" y="92" width="120" height="5.5" rx="2.75" fill="rgba(255,255,255,.34)" opacity=".7"/>
+  <rect x="250" y="92" width="42" height="5.5" rx="2.75" fill="rgba(255,255,255,.34)" opacity=".7"/>
+  <circle cx="300" cy="95" r="9" fill="rgba(120,220,150,.16)" stroke="rgba(120,220,150,.5)"/>
+  <path d="M296 95l3 3 5-6" stroke="rgba(150,240,180,.95)" stroke-width="1.8" stroke-linecap="round"/>
+</g>
+<g class="pop pop-d3">
+  <rect x="118" y="124" width="98" height="5.5" rx="2.75" fill="rgba(255,255,255,.34)" opacity=".7"/>
+  <rect x="250" y="124" width="42" height="5.5" rx="2.75" fill="rgba(255,255,255,.34)" opacity=".7"/>
+  <circle cx="300" cy="127" r="9" fill="rgba(232,112,58,.18)" stroke="var(--warm)"/>
+  <path d="M297 124l6 6M303 124l-6 6" stroke="var(--warm-lo)" stroke-width="1.8" stroke-linecap="round"/>
+</g>
+<g class="pop pop-d4">
+  <rect x="118" y="156" width="112" height="5.5" rx="2.75" fill="rgba(255,255,255,.34)" opacity=".7"/>
+  <rect x="250" y="156" width="42" height="5.5" rx="2.75" fill="rgba(255,255,255,.34)" opacity=".7"/>
+  <circle cx="300" cy="159" r="9" fill="rgba(120,220,150,.16)" stroke="rgba(120,220,150,.5)"/>
+  <path d="M296 159l3 3 5-6" stroke="rgba(150,240,180,.95)" stroke-width="1.8" stroke-linecap="round"/>
+</g>
+<rect x="118" y="196" width="174" height="1" fill="rgba(255,255,255,.13)"/>
+<rect x="118" y="212" width="70" height="7" rx="3.5" fill="var(--ink)" opacity=".8" class="pop pop-d4"/>
+<rect x="238" y="212" width="54" height="7" rx="3.5" fill="var(--warm)" class="pop pop-d4"/>
+
+<!-- เส้นสแกนวิ่งขึ้นลง -->
+<g class="scan">
+  <rect x="86" y="0" width="228" height="2" fill="var(--warm-lo)" opacity=".9"/>
+  <rect x="86" y="-26" width="228" height="26" fill="url(#sg)"/>
+</g>
+<defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="var(--warm)" stop-opacity="0"/>
+  <stop offset="1" stop-color="var(--warm)" stop-opacity=".22"/>
+</linearGradient></defs>
+</svg></div>
+    </div>
+
+    <!-- จำที่จอด -->
+    <div class="feat">
+      <div class="rv">
+        <p class="eyebrow" data-th="06 · จำที่จอด" data-en="06 · Parking memory">06 · จำที่จอด</p>
+        <h2 data-th="บันทึกให้เองตอนรถหยุด" data-en="Saved the moment the car stops">
+          บันทึกให้เองตอนรถหยุด</h2>
+        <p class="dim" style="margin-top:14px"
+           data-th="ไม่ต้องกดปุ่มอะไรเลย พอระบบเห็นว่ารถหยุดนิ่งก็บันทึกจุดนั้นไว้ ตอนเดินกลับมาก็เปิดดูได้ว่าอยู่ตรงไหน จอดมานานแค่ไหน และห่างจากคุณเท่าไหร่"
+           data-en="Nothing to press. When the car settles, the spot is recorded. Later it shows where it is, how long it has been there, and how far you are from it.">
+          ไม่ต้องกดปุ่มอะไรเลย พอระบบเห็นว่ารถหยุดนิ่งก็บันทึกจุดนั้นไว้ ตอนเดินกลับมาก็เปิดดูได้ว่าอยู่ตรงไหน จอดมานานแค่ไหน และห่างจากคุณเท่าไหร่</p>
+        <ul>
+          <li data-th="ปิดฟีเจอร์นี้ได้ตลอด ระบบจะไม่ขอตำแหน่งอีกเลย" data-en="Switch it off and location is never requested again">ปิดฟีเจอร์นี้ได้ตลอด ระบบจะไม่ขอตำแหน่งอีกเลย</li>
+          <li data-th="ตำแหน่งใช้เพื่อแสดงให้คุณเห็นเท่านั้น" data-en="The location is only ever shown back to you">ตำแหน่งใช้เพื่อแสดงให้คุณเห็นเท่านั้น</li>
+        </ul>
+      </div>
+      <div class="feat-art"><svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" >
+<rect x="14" y="14" width="372" height="252" rx="16" fill="#0C1016" stroke="rgba(255,255,255,.13)"/>
+<g stroke="rgba(255,255,255,.13)" stroke-width="1">
+  <path d="M14 78h372M14 142h372M14 206h372"/>
+  <path d="M110 14v252M206 14v252M302 14v252"/>
+</g>
+<!-- ถนนเส้นหลัก -->
+<path d="M14 142h372" stroke="rgba(255,255,255,.1)" stroke-width="16"/>
+<path class="dash" d="M30 142h340" stroke="var(--warm-lo)" stroke-width="2" stroke-dasharray="14 12" opacity=".55"/>
+<!-- อาคาร -->
+<g fill="#121722" stroke="rgba(255,255,255,.13)">
+  <rect x="40" y="36" width="54" height="30" rx="6"/>
+  <rect x="132" y="30" width="42" height="36" rx="6"/>
+  <rect x="238" y="40" width="66" height="26" rx="6"/>
+  <rect x="60" y="184" width="60" height="34" rx="6"/>
+  <rect x="240" y="180" width="80" height="40" rx="6"/>
+</g>
+<!-- คลื่นกระเพื่อมรอบหมุด -->
+<g class="ripple">
+  <circle cx="206" cy="176" r="16" fill="none" stroke="var(--warm)" stroke-width="1.6"/>
+  <circle cx="206" cy="176" r="16" fill="none" stroke="var(--warm)" stroke-width="1.6"/>
+</g>
+<!-- หมุด -->
+<g class="pop pop-d2">
+  <path d="M206 140c-13 0-23 10-23 23 0 16 23 39 23 39s23-23 23-39c0-13-10-23-23-23z"
+        fill="var(--warm)"/>
+  <circle cx="206" cy="163" r="8" fill="#1A0B04"/>
+</g>
+<!-- การ์ดบันทึกอัตโนมัติ -->
+<g class="pop pop-d3">
+  <rect x="228" y="82" width="150" height="62" rx="12" fill="#151A24" stroke="rgba(255,255,255,.13)"/>
+  <circle cx="248" cy="104" r="7" fill="var(--warm)"/><path d="M245 104l2.6 2.6 4.4-5" stroke="#1A0B04" stroke-width="1.8" stroke-linecap="round"/>
+  <rect x="264" y="98" width="86" height="5" rx="2.5" fill="rgba(255,255,255,.34)"/>
+  <rect x="264" y="110" width="58" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".55"/>
+  <rect x="244" y="126" width="112" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".3"/>
+</g>
+</svg></div>
+    </div>
+
+    <!-- สมุดประวัติ -->
+    <div class="feat">
+      <div class="rv">
+        <p class="eyebrow" data-th="07 · สมุดประวัติรถ" data-en="07 · The logbook">07 · สมุดประวัติรถ</p>
+        <h2 data-th="ประวัติทั้งหมดอยู่หน้าเดียว" data-en="The whole history on one screen">
+          ประวัติทั้งหมดอยู่หน้าเดียว</h2>
+        <p class="dim" style="margin-top:14px"
+           data-th="เลขไมล์ รายการที่ซ่อม อะไหล่ที่เปลี่ยน ค่าใช้จ่าย และการเติมน้ำมัน บันทึกครั้งเดียวแล้วอยู่ยาว ตอนขายต่อก็หยิบให้ผู้ซื้อดูได้ทั้งเล่ม"
+           data-en="Mileage, work done, parts fitted, money spent, fuel added. Entered once and kept — and when you sell, you can hand over the whole book.">
+          เลขไมล์ รายการที่ซ่อม อะไหล่ที่เปลี่ยน ค่าใช้จ่าย และการเติมน้ำมัน บันทึกครั้งเดียวแล้วอยู่ยาว ตอนขายต่อก็หยิบให้ผู้ซื้อดูได้ทั้งเล่ม</p>
+      </div>
+      <div class="feat-art"><svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" >
+<rect x="28" y="24" width="344" height="252" rx="18" fill="#0C1016" stroke="rgba(255,255,255,.13)"/>
+<rect x="52" y="50" width="120" height="8" rx="4" fill="var(--ink)" opacity=".85"/>
+<rect x="52" y="66" width="76" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".45"/>
+<rect x="266" y="48" width="82" height="26" rx="13" fill="rgba(232,112,58,.14)" stroke="var(--warm)"/>
+<rect x="280" y="58" width="54" height="6" rx="3" fill="var(--warm-lo)"/>
+<g class="pop pop-d1">
+  <rect x="52" y="92" width="296" height="32" rx="10" fill="#12161E" stroke="rgba(255,255,255,.13)"/>
+  <circle cx="72" cy="108" r="6" fill="var(--warm)" opacity="1.00"/>
+  <rect x="88" y="101" width="132" height="5" rx="2.5" fill="rgba(255,255,255,.34)"/>
+  <rect x="88" y="112" width="73" height="4" rx="2" fill="rgba(255,255,255,.34)" opacity=".4"/>
+  <rect x="292" y="104" width="42" height="6" rx="3" fill="rgba(255,255,255,.34)" opacity=".3"/>
+</g><g class="pop pop-d2">
+  <rect x="52" y="134" width="296" height="32" rx="10" fill="#12161E" stroke="rgba(255,255,255,.13)"/>
+  <circle cx="72" cy="150" r="6" fill="var(--warm)" opacity="0.80"/>
+  <rect x="88" y="143" width="104" height="5" rx="2.5" fill="rgba(255,255,255,.34)"/>
+  <rect x="88" y="154" width="57" height="4" rx="2" fill="rgba(255,255,255,.34)" opacity=".4"/>
+  <rect x="292" y="146" width="42" height="6" rx="3" fill="rgba(255,255,255,.34)" opacity=".3"/>
+</g><g class="pop pop-d3">
+  <rect x="52" y="176" width="296" height="32" rx="10" fill="#12161E" stroke="rgba(255,255,255,.13)"/>
+  <circle cx="72" cy="192" r="6" fill="var(--warm)" opacity="0.60"/>
+  <rect x="88" y="185" width="148" height="5" rx="2.5" fill="rgba(255,255,255,.34)"/>
+  <rect x="88" y="196" width="81" height="4" rx="2" fill="rgba(255,255,255,.34)" opacity=".4"/>
+  <rect x="292" y="188" width="42" height="6" rx="3" fill="rgba(255,255,255,.34)" opacity=".3"/>
+</g><g class="pop pop-d4">
+  <rect x="52" y="218" width="296" height="32" rx="10" fill="#12161E" stroke="rgba(255,255,255,.13)"/>
+  <circle cx="72" cy="234" r="6" fill="var(--warm)" opacity="0.40"/>
+  <rect x="88" y="227" width="88" height="5" rx="2.5" fill="rgba(255,255,255,.34)"/>
+  <rect x="88" y="238" width="48" height="4" rx="2" fill="rgba(255,255,255,.34)" opacity=".4"/>
+  <rect x="292" y="230" width="42" height="6" rx="3" fill="rgba(255,255,255,.34)" opacity=".3"/>
+</g>
+</svg></div>
+    </div>
+
+    <!-- เตือน -->
+    <div class="feat">
+      <div class="rv">
+        <p class="eyebrow" data-th="08 · เตือนล่วงหน้า" data-en="08 · Reminders">08 · เตือนล่วงหน้า</p>
+        <h2 data-th="30 วัน 7 วัน และ 1 วัน" data-en="Thirty days, seven days, one day">
+          30 วัน 7 วัน และ 1 วัน</h2>
+        <p class="dim" style="margin-top:14px"
+           data-th="ภาษี พ.ร.บ. ประกัน และรอบเปลี่ยนถ่าย เตือนสามจังหวะเพื่อให้ยังมีเวลาจัดการ ไม่ใช่มาบอกตอนที่สายไปแล้ว"
+           data-en="Tax, compulsory insurance, cover and service intervals — three warnings so there is still time to act, rather than a notice after the fact.">
+          ภาษี พ.ร.บ. ประกัน และรอบเปลี่ยนถ่าย เตือนสามจังหวะเพื่อให้ยังมีเวลาจัดการ ไม่ใช่มาบอกตอนที่สายไปแล้ว</p>
+        <ul>
+          <li data-th="รอบเปลี่ยนถ่ายคิดจากระยะทางจริง ไม่ใช่ปฏิทินอย่างเดียว" data-en="Service intervals follow actual distance, not just the calendar">รอบเปลี่ยนถ่ายคิดจากระยะทางจริง ไม่ใช่ปฏิทินอย่างเดียว</li>
+          <li data-th="เปิดปิดการแจ้งเตือนแต่ละแบบแยกกันได้" data-en="Each reminder type can be turned on or off">เปิดปิดการแจ้งเตือนแต่ละแบบแยกกันได้</li>
+        </ul>
+      </div>
+      <div class="feat-art"><svg viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="art-remind">
+<path d="M40 152h320" stroke="rgba(255,255,255,.13)" stroke-width="2"/>
+<path class="dash" d="M40 152h320" stroke="var(--warm)" stroke-width="2"/>
+
+<g class="pop pop-d1">
+  <circle cx="96" cy="152" r="9" fill="#0A0D12" stroke="var(--warm)" stroke-width="2.4"/>
+  <text x="96" y="128" fill="var(--warm-lo)" font-size="15" text-anchor="middle"
+        font-family="ui-sans-serif,system-ui" font-weight="600">30</text>
+  <text x="96" y="186" fill="rgba(255,255,255,.34)" font-size="11.5" text-anchor="middle"
+        font-family="ui-sans-serif,system-ui" class="d-lbl"
+        data-th="วันก่อน" data-en="days before">วันก่อน</text>
+</g>
+<g class="pop pop-d2">
+  <circle cx="200" cy="152" r="9" fill="#0A0D12" stroke="var(--warm)" stroke-width="2.4"/>
+  <text x="200" y="128" fill="var(--warm-lo)" font-size="15" text-anchor="middle"
+        font-family="ui-sans-serif,system-ui" font-weight="600">7</text>
+  <text x="200" y="186" fill="rgba(255,255,255,.34)" font-size="11.5" text-anchor="middle"
+        font-family="ui-sans-serif,system-ui" class="d-lbl"
+        data-th="วันก่อน" data-en="days before">วันก่อน</text>
+</g>
+<g class="pop pop-d3">
+  <circle cx="304" cy="152" r="11" fill="var(--warm)"/>
+  <text x="304" y="128" fill="var(--ink)" font-size="15" text-anchor="middle"
+        font-family="ui-sans-serif,system-ui" font-weight="700">1</text>
+  <text x="304" y="188" fill="var(--warm-lo)" font-size="11.5" text-anchor="middle"
+        font-family="ui-sans-serif,system-ui" class="d-lbl"
+        data-th="วันก่อน" data-en="days before">วันก่อน</text>
+</g>
+<!-- ธงวันหมดอายุ -->
+<g class="pop pop-d4">
+  <path d="M360 152v-52" stroke="rgba(255,255,255,.13)" stroke-width="2"/>
+  <path d="M360 100h34l-8 11 8 11h-34z" fill="var(--warm)"/>
+</g>
+<!-- กระดิ่งสั่น -->
+<g class="bell pop pop-d2">
+  <path d="M74 58c0-13 10-23 22-23s22 10 22 23c0 20 6 25 9 30H65c3-5 9-10 9-30z"
+        fill="#161B24" stroke="var(--warm)" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M88 94a8 8 0 0016 0" stroke="var(--warm)" stroke-width="2.2" stroke-linecap="round"/>
+</g>
+</svg></div>
+    </div>
+
+    <!-- สไตล์การพูด -->
+    <div class="feat">
+      <div class="rv">
+        <p class="eyebrow" data-th="09 · สไตล์การพูด" data-en="09 · Tone">09 · สไตล์การพูด</p>
+        <h2 data-th="เลือกได้ว่าอยากให้มันคุยแบบไหน" data-en="Choose how it talks to you">
+          เลือกได้ว่าอยากให้มันคุยแบบไหน</h2>
+        <p class="dim" style="margin-top:14px"
+           data-th="บางคนอยากได้คำตอบสั้นเป็นระเบียบ บางคนอยากให้คุยเหมือนเพื่อน เลือกได้สี่แบบ เปลี่ยนเมื่อไหร่ก็ได้ในหน้าตั้งค่าของแชต"
+           data-en="Some people want terse and orderly. Some want it to sound like a friend. Four styles, switchable any time in the chat settings.">
+          บางคนอยากได้คำตอบสั้นเป็นระเบียบ บางคนอยากให้คุยเหมือนเพื่อน เลือกได้สี่แบบ เปลี่ยนเมื่อไหร่ก็ได้ในหน้าตั้งค่าของแชต</p>
+        <ul>
+          <li data-th="เป็นระเบียบ — สั้น ตรงประเด็น เป็นข้อ ๆ" data-en="Precise — short, ordered, to the point">เป็นระเบียบ — สั้น ตรงประเด็น เป็นข้อ ๆ</li>
+          <li data-th="เหมือนคนทั่วไป — ภาษาพูดปกติ" data-en="Natural — how a person would actually say it">เหมือนคนทั่วไป — ภาษาพูดปกติ</li>
+          <li data-th="ติดเล่น — เป็นกันเองขึ้น" data-en="Playful — a bit more relaxed">ติดเล่น — เป็นกันเองขึ้น</li>
+          <li data-th="ตลก — มีมุกแทรกบ้าง" data-en="Funny — it will make jokes">ตลก — มีมุกแทรกบ้าง</li>
+        </ul>
+        <p class="dim" style="margin-top:12px;font-size:14.6px"
+           data-th="สไตล์เปลี่ยนแค่วิธีพูด ไม่ได้เปลี่ยนเนื้อหาหรือความระมัดระวังเรื่องความปลอดภัย"
+           data-en="Tone changes the delivery only — never the content, and never the safety warnings.">
+          สไตล์เปลี่ยนแค่วิธีพูด ไม่ได้เปลี่ยนเนื้อหาหรือความระมัดระวังเรื่องความปลอดภัย</p>
+      </div>
+      <div class="feat-art"><svg viewBox="0 0 400 270" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" >
+<g class="pop">
+  <rect x="24" y="30" width="164" height="66" rx="16" fill="#161B24" stroke="rgba(255,255,255,.13)"/>
+  <rect x="42" y="50" width="98" height="5" rx="2.5" fill="rgba(255,255,255,.34)"/>
+  <rect x="42" y="64" width="122" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".55"/>
+  <rect x="42" y="78" width="66" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".3"/>
+</g>
+<g class="pop pop-d1">
+  <rect x="212" y="46" width="164" height="52" rx="16" fill="rgba(232,112,58,.13)" stroke="var(--warm)"/>
+  <rect x="230" y="62" width="112" height="5" rx="2.5" fill="var(--warm-lo)"/>
+  <rect x="230" y="76" width="76" height="5" rx="2.5" fill="var(--warm-lo)" opacity=".55"/>
+</g>
+<g class="pop pop-d2">
+  <rect x="52" y="126" width="164" height="52" rx="16" fill="#161B24" stroke="rgba(255,255,255,.13)"/>
+  <rect x="70" y="142" width="86" height="5" rx="2.5" fill="rgba(255,255,255,.34)"/>
+  <rect x="70" y="156" width="120" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".5"/>
+</g>
+<g class="pop pop-d3">
+  <rect x="236" y="134" width="140" height="66" rx="16" fill="#161B24" stroke="rgba(255,255,255,.13)"/>
+  <rect x="254" y="152" width="74" height="5" rx="2.5" fill="rgba(255,255,255,.34)"/>
+  <rect x="254" y="166" width="102" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".5"/>
+  <rect x="254" y="180" width="56" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".28"/>
+</g>
+<!-- ปุ่มเลือกสไตล์ -->
+<g class="pop pop-d4">
+  <rect x="24" y="216" width="86" height="30" rx="15" fill="var(--warm)"/>
+  <rect x="40" y="229" width="54" height="5" rx="2.5" fill="#1A0B04" opacity=".75"/>
+  <rect x="120" y="216" width="86" height="30" rx="15" fill="#12161E" stroke="rgba(255,255,255,.13)"/>
+  <rect x="136" y="229" width="54" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".6"/>
+  <rect x="216" y="216" width="72" height="30" rx="15" fill="#12161E" stroke="rgba(255,255,255,.13)"/>
+  <rect x="230" y="229" width="44" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".6"/>
+  <rect x="298" y="216" width="78" height="30" rx="15" fill="#12161E" stroke="rgba(255,255,255,.13)"/>
+  <rect x="312" y="229" width="50" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".6"/>
+</g>
+</svg></div>
+    </div>
+
+    <!-- โควตา -->
+    <div class="feat">
+      <div class="rv">
+        <p class="eyebrow" data-th="10 · โควตาการใช้งาน" data-en="10 · Your quota">10 · โควตาการใช้งาน</p>
+        <h2 data-th="นับตามงานที่ใช้จริง ไม่ใช่จำนวนครั้งที่พิมพ์"
+            data-en="Counted by work done, not by how often you type">
+          นับตามงานที่ใช้จริง ไม่ใช่จำนวนครั้งที่พิมพ์</h2>
+        <p class="dim" style="margin-top:14px"
+           data-th="คำถามสั้นใช้น้อย คำถามที่ต้องอ่านรูปหรือวิเคราะห์ยาวใช้มากกว่า ระบบจึงนับตามปริมาณงานจริง ยุติธรรมกับคนที่ถามสั้น ๆ บ่อย ๆ มากกว่า"
+           data-en="A short question costs little; one that reads an image or reasons at length costs more. Counting the actual work is fairer to people who ask many small questions.">
+          คำถามสั้นใช้น้อย คำถามที่ต้องอ่านรูปหรือวิเคราะห์ยาวใช้มากกว่า ระบบจึงนับตามปริมาณงานจริง ยุติธรรมกับคนที่ถามสั้น ๆ บ่อย ๆ มากกว่า</p>
+        <ul>
+          <li data-th="ดูยอดคงเหลือได้ในหน้าตั้งค่าของแชต" data-en="See the balance in chat settings">ดูยอดคงเหลือได้ในหน้าตั้งค่าของแชต</li>
+          <li data-th="ช่วงเบต้าใช้ได้ทุกฟีเจอร์ ไม่มีค่าใช้จ่าย" data-en="During beta everything is free">ช่วงเบต้าใช้ได้ทุกฟีเจอร์ ไม่มีค่าใช้จ่าย</li>
+        </ul>
+      </div>
+      <div class="feat-art"><svg viewBox="0 0 400 270" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" >
+<rect x="28" y="42" width="344" height="120" rx="16" fill="#0C1016" stroke="rgba(255,255,255,.13)"/>
+<rect x="52" y="70" width="120" height="7" rx="3.5" fill="var(--ink)" opacity=".8"/>
+<rect x="52" y="102" width="296" height="14" rx="7" fill="#161B24"/>
+<g class="grow" style="transform-origin:52px 109px">
+  <rect x="52" y="102" width="182" height="14" rx="7" fill="var(--warm)"/>
+</g>
+<rect x="52" y="130" width="150" height="5" rx="2.5" fill="rgba(255,255,255,.34)" opacity=".5"/>
+<!-- คำถามสั้น–ยาว ใช้ไม่เท่ากัน -->
+<g class="pop pop-d2">
+  <rect x="28" y="190" width="164" height="58" rx="14" fill="#161B24" stroke="rgba(255,255,255,.13)"/>
+  <rect x="46" y="206" width="60" height="5" rx="2.5" fill="rgba(255,255,255,.34)"/>
+  <rect x="46" y="222" width="34" height="10" rx="5" fill="var(--warm)" opacity=".55"/>
+</g>
+<g class="pop pop-d3">
+  <rect x="208" y="190" width="164" height="58" rx="14" fill="#161B24" stroke="rgba(255,255,255,.13)"/>
+  <rect x="226" y="206" width="96" height="5" rx="2.5" fill="rgba(255,255,255,.34)"/>
+  <rect x="226" y="222" width="106" height="10" rx="5" fill="var(--warm)"/>
+</g>
+</svg></div>
+    </div>
+
+  </div>
+</section>
+
+<section class="sec-tight">
+  <div class="wrap">
+    <div class="cta rv">
+      <h2 data-th="อ่านครบแล้ว ลองของจริงเลย" data-en="That is the tour. Now try it.">
+        อ่านครบแล้ว ลองของจริงเลย</h2>
+      <div class="hero-cta" style="justify-content:center">
+        <a class="btn btn-warm btn-lg" href="guide.html"
+           data-th="เริ่มจากคู่มือ" data-en="Start with the guide">เริ่มจากคู่มือ</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="Cendon">{{MARK}}<span class="wm">Cendon</span></a>
+        <p class="dim" style="margin-top:14px;max-width:34ch;font-size:14.6px"
+           data-th="ผู้ช่วยดูแลรถที่จำแทนคุณ อ่านใบเสนอราคาแทนคุณ และเตือนก่อนจะสาย"
+           data-en="A car-care assistant that keeps the record, reads the quote, and warns you before it is late.">
+          ผู้ช่วยดูแลรถที่จำแทนคุณ อ่านใบเสนอราคาแทนคุณ และเตือนก่อนจะสาย</p>
+      </div>
+      <div>
+        <h4 data-th="ผลิตภัณฑ์" data-en="Product">ผลิตภัณฑ์</h4>
+        <a href="features.html" data-th="ความสามารถทั้งหมด" data-en="What it does">ความสามารถทั้งหมด</a>
+        <a href="guide.html" data-th="คู่มือใช้งาน" data-en="User guide">คู่มือใช้งาน</a>
+        <a href="https://spireone.pages.dev/" target="_blank" rel="noopener" data-th="เปิดแอป" data-en="Open the app">เปิดแอป</a>
+      </div>
+      <div>
+        <h4 data-th="บริษัท" data-en="Company">บริษัท</h4>
+        <a href="about.html" data-th="ความเป็นมา" data-en="About us">ความเป็นมา</a>
+        <a href="help.html" data-th="ศูนย์ช่วยเหลือ" data-en="Get help">ศูนย์ช่วยเหลือ</a>
+      </div>
+      <div>
+        <h4 data-th="กฎหมาย" data-en="Legal">กฎหมาย</h4>
+        <a href="terms.html" data-th="เงื่อนไขการให้บริการ" data-en="Terms of Service">เงื่อนไขการให้บริการ</a>
+        <a href="privacy.html" data-th="นโยบายความเป็นส่วนตัว" data-en="Privacy Policy">นโยบายความเป็นส่วนตัว</a>
+      </div>
+    </div>
+    <div class="ft-base">
+      <span>© <span data-year></span> Cendon</span>
+      <span data-th="ช่วงเบต้า — ใช้ได้ทุกฟีเจอร์ฟรี"
+            data-en="Beta — every feature is free during testing">ช่วงเบต้า — ใช้ได้ทุกฟีเจอร์ฟรี</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>คู่มือใช้งาน — Cendon</title>
+<meta name="description" content="เริ่มต้นใช้ Cendon ตั้งแต่ใส่รถคันแรก จนถึงการอ่านคำตอบให้เป็น">
+<meta name="theme-color" content="#07080B">
+<meta property="og:title" content="คู่มือใช้งาน — Cendon">
+<meta property="og:description" content="เริ่มต้นใช้ Cendon ตั้งแต่ใส่รถคันแรก จนถึงการอ่านคำตอบให้เป็น">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/phasmion-tiny.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/Spire09-Medium.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<!-- ฟอนต์ไทยโหลดแบบไม่บล็อกการวาดหน้า ถ้าโหลดไม่ได้ก็ตกไปใช้ฟอนต์ระบบ -->
+<link rel="stylesheet" media="print" onload="this.media='all'"
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap">
+<noscript><link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap"></noscript>
+<noscript><style>
+  /* ถ้าสคริปต์ไม่ทำงาน เนื้อหาต้องยังอ่านได้ครบ ห้ามหายไปทั้งหน้า */
+  .rv{opacity:1!important;transform:none!important}
+  .pop{opacity:1!important;transform:none!important}
+  .dash{stroke-dashoffset:0!important}
+  .grow{transform:none!important}
+</style></noscript>
+</head>
+<body>
+<a class="skip" href="#main" data-th="ข้ามไปเนื้อหา" data-en="Skip to content">ข้ามไปเนื้อหา</a>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="index.html" aria-label="Cendon">
+      <svg class="mk" viewBox="0 0 200 200" fill="currentColor" aria-hidden="true"><path d="M99.6 83.0 108.3 83.0 111.5 83.1 113.6 83.3 115.0 83.5 115.9 83.7 116.4 83.8 116.6 83.8 116.6 83.8 116.5 83.7 116.4 83.5 116.3 83.3 116.3 83.3 116.5 83.4 116.7 83.9 116.9 84.7 117.2 86.0 117.5 88.0 117.7 90.9 117.9 96.5 117.9 107.5 117.8 111.0 117.6 113.3 117.4 114.9 117.2 116.0 117.0 116.6 116.9 117.0 116.9 117.1 117.0 117.1 117.1 117.0 117.2 117.0 117.2 117.1 117.0 117.2 116.5 117.4 115.7 117.7 114.4 118.0 112.6 118.3 109.8 118.6 105.1 118.7 93.6 118.7 89.5 118.7 87.0 118.5 85.2 118.3 84.0 118.1 83.2 117.9 82.7 117.7 82.4 117.6 82.4 117.6 82.3 117.7 82.3 117.7 82.2 117.6 82.0 117.4 81.8 117.0 81.5 116.1 81.2 114.9 80.9 113.1 80.6 110.5 80.5 106.4 80.4 94.9 80.5 90.1 80.6 87.3 80.8 85.4 81.0 84.0 81.3 83.0 82.0 81.0 L53.4 71.3 52.5 73.3 51.5 76.8 50.7 80.5 50.1 84.4 49.8 88.9 49.6 94.7 49.6 106.7 49.7 112.1 50.0 116.4 50.5 120.3 51.3 124.0 52.3 127.5 53.7 130.9 55.4 134.2 57.5 137.3 59.9 140.1 62.7 142.6 65.7 144.7 68.9 146.6 72.3 148.0 75.9 149.2 79.6 150.0 83.5 150.6 87.9 151.0 93.3 151.2 105.3 151.3 111.2 151.2 115.7 150.9 119.7 150.5 123.5 149.7 127.1 148.7 130.6 147.4 134.0 145.7 137.2 143.6 140.1 141.2 142.8 138.4 145.1 135.4 147.0 132.1 148.6 128.7 149.8 125.1 150.7 121.3 151.4 117.4 151.8 113.1 152.1 107.9 152.1 96.4 152.1 89.8 151.9 85.1 151.4 81.0 150.7 77.1 149.8 73.3 148.5 69.7 146.8 66.2 144.8 62.9 142.4 59.9 139.6 57.1 136.5 54.6 133.2 52.6 129.7 50.9 126.0 49.6 122.3 48.6 118.3 47.9 114.1 47.4 109.1 47.1 100.4 47.0Z"/><path d="M162.3 69.9 162.9 78.9 163.1 93.5 163.0 118.3 162.7 127.3 162.1 133.8 161.3 138.9 160.4 143.0 159.3 146.3 158.2 149.1 156.9 151.3 155.5 153.2 154.0 154.9 152.3 156.4 150.3 157.8 147.8 159.1 144.8 160.3 141.0 161.4 136.4 162.3 130.6 163.1 123.0 163.6 110.9 163.9 84.1 163.9 74.2 163.6 67.3 163.1 61.9 162.4 57.5 161.4 54.0 160.4 51.1 159.2 48.6 157.9 46.6 156.5 44.8 155.0 43.2 153.2 41.8 151.2 40.4 148.7 39.1 145.7 38.0 142.1 37.0 137.6 36.2 132.0 35.6 124.8 35.2 114.1 35.2 86.9 35.4 75.8 35.9 68.4 36.6 62.7 37.5 58.1 38.6 54.4 39.8 51.2 41.1 48.6 42.5 46.4 44.1 44.6 45.9 42.9 47.9 41.3 50.4 39.9 53.3 38.6 56.9 37.4 61.3 36.3 66.7 35.5 73.6 34.8 83.2 34.4 109.6 34.3 122.4 34.5 130.3 34.9 136.4 35.6 142.4 36.7 L146.9 6.8 140.9 5.6 133.0 4.6 123.5 4.0 109.7 3.7 82.9 3.7 71.8 4.1 63.1 4.8 55.6 5.9 48.8 7.4 42.4 9.4 36.6 11.9 31.1 14.9 26.0 18.5 21.5 22.6 17.4 27.3 13.9 32.4 10.9 38.0 8.5 44.0 6.5 50.4 5.0 57.4 3.9 65.2 3.2 74.4 2.9 86.7 2.8 114.3 3.1 126.3 3.8 135.3 4.8 143.1 6.2 150.1 8.1 156.6 10.6 162.7 13.5 168.3 17.1 173.5 21.2 178.3 25.8 182.5 30.9 186.2 36.4 189.3 42.4 191.9 48.9 194.0 55.8 195.6 63.5 196.7 72.4 197.5 83.7 197.9 111.0 198.0 124.3 197.8 133.7 197.3 141.8 196.3 149.0 194.9 155.6 193.1 161.8 190.7 167.6 187.9 173.0 184.4 177.9 180.3 182.3 175.7 186.2 170.7 189.5 165.1 192.2 159.1 194.4 152.7 196.1 145.8 197.4 138.2 198.3 129.6 198.7 118.9 198.9 93.4 198.8 77.9 198.3 68.9Z"/></svg>
+      <span class="wm">Cendon</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html"   data-th="หน้าแรก"    data-en="Home">หน้าแรก</a>
+      <a href="features.html" data-th="ความสามารถ" data-en="What it does">ความสามารถ</a>
+      <a href="guide.html" aria-current="page"   data-th="คู่มือใช้งาน" data-en="Guide">คู่มือใช้งาน</a>
+      <a href="about.html"   data-th="ความเป็นมา"  data-en="About">ความเป็นมา</a>
+      <a href="help.html"    data-th="ช่วยเหลือ"   data-en="Help">ช่วยเหลือ</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang" role="group" data-th-aria="เลือกภาษา" data-en-aria="Choose language">
+        <button data-l="th" type="button">ไทย</button><button data-l="en" type="button">EN</button>
+      </div>
+      <a class="btn btn-solid" href="https://spireone.pages.dev/" target="_blank" rel="noopener"
+         data-th="เปิดแอป" data-en="Open the app">เปิดแอป</a>
+      <button class="burger" type="button" aria-expanded="false"
+              data-th-aria="เมนู" data-en-aria="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<section style="padding-top:clamp(40px,7vw,76px)">
+  <div class="wrap">
+    <div class="rv" style="max-width:62ch">
+      <p class="eyebrow" data-th="คู่มือใช้งาน" data-en="User guide">คู่มือใช้งาน</p>
+      <h1 data-th="เริ่มจากศูนย์ ใช้เป็นภายในสิบนาที" data-en="From zero to fluent in ten minutes">
+        เริ่มจากศูนย์ ใช้เป็นภายในสิบนาที</h1>
+      <p class="lede" style="margin-top:18px"
+         data-th="อ่านตามลำดับก็ได้ หรือกดข้ามไปหัวข้อที่ต้องการจากสารบัญด้านซ้าย"
+         data-en="Read it in order, or jump to what you need from the contents on the left.">
+        อ่านตามลำดับก็ได้ หรือกดข้ามไปหัวข้อที่ต้องการจากสารบัญด้านซ้าย</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec-tight" style="padding-top:clamp(20px,3vw,32px)">
+  <div class="wrap doc">
+    <nav class="toc" aria-label="สารบัญ">
+      <a href="#start"   data-th="1 · เริ่มต้น"        data-en="1 · Getting started">1 · เริ่มต้น</a>
+      <a href="#car"     data-th="2 · ใส่รถของคุณ"     data-en="2 · Add your car">2 · ใส่รถของคุณ</a>
+      <a href="#ask"     data-th="3 · ถามให้ได้คำตอบดี" data-en="3 · Asking well">3 · ถามให้ได้คำตอบดี</a>
+      <a href="#read"    data-th="4 · อ่านคำตอบให้เป็น" data-en="4 · Reading the answer">4 · อ่านคำตอบให้เป็น</a>
+      <a href="#sound"   data-th="5 · อัดเสียงและวัดสั่น" data-en="5 · Sound &amp; vibration">5 · อัดเสียงและวัดสั่น</a>
+      <a href="#quote"   data-th="6 · ตรวจใบเสนอราคา"   data-en="6 · Checking a quote">6 · ตรวจใบเสนอราคา</a>
+      <a href="#remind"  data-th="7 · ตั้งเตือน"        data-en="7 · Reminders">7 · ตั้งเตือน</a>
+      <a href="#park"    data-th="8 · จำที่จอด"         data-en="8 · Parking">8 · จำที่จอด</a>
+      <a href="#book"    data-th="9 · สมุดประวัติ"      data-en="9 · The logbook">9 · สมุดประวัติ</a>
+      <a href="#tone"    data-th="10 · ปรับวิธีพูด"     data-en="10 · Tone">10 · ปรับวิธีพูด</a>
+      <a href="#quota"   data-th="11 · โควตา"           data-en="11 · Quota">11 · โควตา</a>
+      <a href="#offline" data-th="12 · ออฟไลน์และอัปเดต" data-en="12 · Offline &amp; updates">12 · ออฟไลน์และอัปเดต</a>
+      <a href="#safety"  data-th="13 · ความปลอดภัย"     data-en="13 · Safety">13 · ความปลอดภัย</a>
+    </nav>
+
+    <div class="doc-body">
+
+      <h2 id="start" class="rv" data-th="1 · เริ่มต้น" data-en="1 · Getting started">1 · เริ่มต้น</h2>
+      <div class="rv">
+        <p data-th="Cendon ทำงานบนเบราว์เซอร์ ไม่ต้องโหลดจากสโตร์ เปิดเว็บแล้วใช้ได้เลย ถ้าอยากให้มีไอคอนบนหน้าจอเหมือนแอปทั่วไป ให้เลือก “เพิ่มไปยังหน้าจอโฮม” จากเมนูเบราว์เซอร์"
+           data-en="Cendon runs in the browser — no store download. Open it and it works. If you want an icon on your home screen like a normal app, choose “Add to Home Screen” from the browser menu.">
+          Cendon ทำงานบนเบราว์เซอร์ ไม่ต้องโหลดจากสโตร์ เปิดเว็บแล้วใช้ได้เลย ถ้าอยากให้มีไอคอนบนหน้าจอเหมือนแอปทั่วไป ให้เลือก “เพิ่มไปยังหน้าจอโฮม” จากเมนูเบราว์เซอร์</p>
+        <h3 data-th="ต้องสมัครไหม" data-en="Do I need an account?">ต้องสมัครไหม</h3>
+        <p data-th="ลองดูรอบ ๆ ได้โดยไม่ต้องสมัคร แต่ถ้าอยากให้ระบบจำรถ จำประวัติ และเตือนวันสำคัญ ต้องมีบัญชี เพราะข้อมูลพวกนี้ต้องผูกกับใครสักคน เข้าสู่ระบบได้ด้วยบัญชี Google หรือเบอร์โทรศัพท์"
+           data-en="You can look around without one. But for it to remember your car, keep the history and send reminders, you need an account — that data has to belong to someone. Sign in with Google or a phone number.">
+          ลองดูรอบ ๆ ได้โดยไม่ต้องสมัคร แต่ถ้าอยากให้ระบบจำรถ จำประวัติ และเตือนวันสำคัญ ต้องมีบัญชี เพราะข้อมูลพวกนี้ต้องผูกกับใครสักคน เข้าสู่ระบบได้ด้วยบัญชี Google หรือเบอร์โทรศัพท์</p>
+      </div>
+
+      <h2 id="car" class="rv" data-th="2 · ใส่รถของคุณ" data-en="2 · Add your car">2 · ใส่รถของคุณ</h2>
+      <div class="rv">
+        <p data-th="นี่คือขั้นที่สำคัญที่สุด เพราะทุกคำตอบหลังจากนี้จะอิงข้อมูลตรงนี้ ยิ่งใส่ละเอียดเท่าไหร่ คำตอบยิ่งตรงกับรถของคุณจริง ๆ"
+           data-en="This is the step that matters most — every later answer is built on it. The more accurate this is, the more the answers are about your car rather than cars in general.">
+          นี่คือขั้นที่สำคัญที่สุด เพราะทุกคำตอบหลังจากนี้จะอิงข้อมูลตรงนี้ ยิ่งใส่ละเอียดเท่าไหร่ คำตอบยิ่งตรงกับรถของคุณจริง ๆ</p>
+        <h3 data-th="อย่างน้อยต้องมี" data-en="The minimum">อย่างน้อยต้องมี</h3>
+        <ul>
+          <li data-th="ยี่ห้อ รุ่น และปี" data-en="Make, model and year">ยี่ห้อ รุ่น และปี</li>
+          <li data-th="เลขไมล์ปัจจุบัน — ดูจากหน้าปัด ไม่ต้องเป๊ะถึงหลักหน่วย" data-en="Today's odometer — from the dash; it does not need to be exact to the kilometre">เลขไมล์ปัจจุบัน — ดูจากหน้าปัด ไม่ต้องเป๊ะถึงหลักหน่วย</li>
+          <li data-th="ชนิดเชื้อเพลิง (เบนซิน ดีเซล ไฟฟ้า)" data-en="Fuel type (petrol, diesel, electric)">ชนิดเชื้อเพลิง (เบนซิน ดีเซล ไฟฟ้า)</li>
+        </ul>
+        <h3 data-th="ใส่เพิ่มได้ถ้ามี" data-en="Add if you have it">ใส่เพิ่มได้ถ้ามี</h3>
+        <ul>
+          <li data-th="วันต่อภาษีและวันหมด พ.ร.บ." data-en="Tax and compulsory-insurance dates">วันต่อภาษีและวันหมด พ.ร.บ.</li>
+          <li data-th="วันเปลี่ยนถ่ายน้ำมันเครื่องครั้งล่าสุด และเลขไมล์ตอนนั้น" data-en="Last oil change — the date and the odometer reading">วันเปลี่ยนถ่ายน้ำมันเครื่องครั้งล่าสุด และเลขไมล์ตอนนั้น</li>
+          <li data-th="ประวัติการซ่อมที่ผ่านมาเท่าที่จำได้" data-en="Any past repairs you remember">ประวัติการซ่อมที่ผ่านมาเท่าที่จำได้</li>
+        </ul>
+        <div class="note">
+          <p data-th-html="<b>เคล็ดลับ</b> — ถ้าจำวันไม่ได้ ใส่ประมาณไปก่อนแล้วแก้ทีหลังได้ ดีกว่าเว้นว่าง เพราะระบบต้องมีจุดตั้งต้นถึงจะคำนวณรอบถัดไปได้"
+             data-en-html="<b>Tip</b> — if you cannot recall a date, put an approximate one and correct it later. An estimate beats a blank, because the system needs a starting point to work out the next interval."><b>เคล็ดลับ</b> — ถ้าจำวันไม่ได้ ใส่ประมาณไปก่อนแล้วแก้ทีหลังได้ ดีกว่าเว้นว่าง เพราะระบบต้องมีจุดตั้งต้นถึงจะคำนวณรอบถัดไปได้</p>
+        </div>
+        <h3 data-th="มีรถหลายคัน" data-en="More than one car">มีรถหลายคัน</h3>
+        <p data-th="ใส่ได้หลายคัน แล้วสลับได้จากหน้าแรก ประวัติของแต่ละคันแยกกันสมบูรณ์ ไม่ปนกัน"
+           data-en="Add as many as you like and switch between them from the home screen. Each car keeps its own history; nothing is mixed.">
+          ใส่ได้หลายคัน แล้วสลับได้จากหน้าแรก ประวัติของแต่ละคันแยกกันสมบูรณ์ ไม่ปนกัน</p>
+      </div>
+
+      <h2 id="ask" class="rv" data-th="3 · ถามให้ได้คำตอบดี" data-en="3 · Asking well">3 · ถามให้ได้คำตอบดี</h2>
+      <div class="rv">
+        <p data-th="ไม่ต้องพยายามพูดให้เหมือนช่าง พูดอย่างที่คุณรู้สึกจริง ๆ ดีกว่า แต่มีสามอย่างที่ถ้าใส่มาด้วยจะช่วยได้มาก"
+           data-en="Do not try to sound like a mechanic — say what you actually notice. Three things, though, make a large difference if you include them.">
+          ไม่ต้องพยายามพูดให้เหมือนช่าง พูดอย่างที่คุณรู้สึกจริง ๆ ดีกว่า แต่มีสามอย่างที่ถ้าใส่มาด้วยจะช่วยได้มาก</p>
+        <ul>
+          <li data-th-html="<strong>เกิดตอนไหน</strong> — ตอนสตาร์ตเย็น ตอนเบรก ตอนเลี้ยว ตอนความเร็วเท่าไหร่"
+              data-en-html="<strong>When it happens</strong> — cold start, braking, turning, at what speed"><strong>เกิดตอนไหน</strong> — ตอนสตาร์ตเย็น ตอนเบรก ตอนเลี้ยว ตอนความเร็วเท่าไหร่</li>
+          <li data-th-html="<strong>เป็นมานานเท่าไหร่</strong> — เพิ่งเป็นเมื่อวาน หรือเป็นมาสามเดือนแล้วค่อย ๆ แย่ลง"
+              data-en-html="<strong>How long</strong> — since yesterday, or three months and slowly worsening"><strong>เป็นมานานเท่าไหร่</strong> — เพิ่งเป็นเมื่อวาน หรือเป็นมาสามเดือนแล้วค่อย ๆ แย่ลง</li>
+          <li data-th-html="<strong>มีอะไรเปลี่ยนไปก่อนหน้านั้น</strong> — เพิ่งเปลี่ยนยาง เพิ่งลุยน้ำ เพิ่งเข้าอู่มา"
+              data-en-html="<strong>What changed before it started</strong> — new tyres, drove through water, just came back from a garage"><strong>มีอะไรเปลี่ยนไปก่อนหน้านั้น</strong> — เพิ่งเปลี่ยนยาง เพิ่งลุยน้ำ เพิ่งเข้าอู่มา</li>
+        </ul>
+        <h3 data-th="ตัวอย่างที่ดี" data-en="A good example">ตัวอย่างที่ดี</h3>
+        <p style="border-left:2px solid var(--warm);padding-left:16px"
+           data-th="“เบรกตอนความเร็วต่ำแล้วมีเสียงเอี๊ยดจากล้อหน้าซ้าย เป็นมาประมาณสองสัปดาห์ ตอนฝนตกดังกว่าปกติ เพิ่งเปลี่ยนผ้าเบรกไปเมื่อสี่เดือนก่อน”"
+           data-en="“A squeal from the front left when I brake at low speed. Started about two weeks ago, worse in the rain. Pads were replaced four months ago.”">
+          “เบรกตอนความเร็วต่ำแล้วมีเสียงเอี๊ยดจากล้อหน้าซ้าย เป็นมาประมาณสองสัปดาห์ ตอนฝนตกดังกว่าปกติ เพิ่งเปลี่ยนผ้าเบรกไปเมื่อสี่เดือนก่อน”</p>
+        <p data-th="ถ้าคุณให้ข้อมูลไม่ครบ ระบบจะถามกลับเอง ไม่ต้องกังวลว่าจะถามผิด"
+           data-en="If something is missing it will ask. There is no wrong way to start.">
+          ถ้าคุณให้ข้อมูลไม่ครบ ระบบจะถามกลับเอง ไม่ต้องกังวลว่าจะถามผิด</p>
+      </div>
+
+      <h2 id="read" class="rv" data-th="4 · อ่านคำตอบให้เป็น" data-en="4 · Reading the answer">4 · อ่านคำตอบให้เป็น</h2>
+      <div class="rv">
+        <p data-th="คำตอบแบ่งเป็นแท็บ กดสลับได้ตามที่ต้องการตอนนั้น สิ่งที่ควรทำเป็นนิสัยคือเปิดแท็บ “ที่มาของคำตอบ” ดูสักครั้ง เพราะมันบอกว่าระบบใช้ข้อมูลอะไรมาสรุป ถ้าเห็นว่าอ้างข้อมูลผิด คุณจะรู้ทันที"
+           data-en="Answers come in tabs — switch to whichever you need. Make a habit of opening “Reasoning” at least once: it shows what the conclusion was built on, so if it used something wrong you will spot it immediately.">
+          คำตอบแบ่งเป็นแท็บ กดสลับได้ตามที่ต้องการตอนนั้น สิ่งที่ควรทำเป็นนิสัยคือเปิดแท็บ “ที่มาของคำตอบ” ดูสักครั้ง เพราะมันบอกว่าระบบใช้ข้อมูลอะไรมาสรุป ถ้าเห็นว่าอ้างข้อมูลผิด คุณจะรู้ทันที</p>
+        <h3 data-th="ถ้าจะเข้าอู่" data-en="If you are heading to a garage">ถ้าจะเข้าอู่</h3>
+        <p data-th="เปิดแท็บ “เตรียมเข้าอู่” แล้วอ่านก่อนไป มันจะบอกว่าควรเล่าอาการยังไงให้ช่างเข้าใจเร็ว และควรถามอะไรกลับก่อนตกลงซ่อม"
+           data-en="Open “Shop brief” before you go. It tells you how to describe the symptom so the mechanic understands quickly, and what to ask back before agreeing to work.">
+          เปิดแท็บ “เตรียมเข้าอู่” แล้วอ่านก่อนไป มันจะบอกว่าควรเล่าอาการยังไงให้ช่างเข้าใจเร็ว และควรถามอะไรกลับก่อนตกลงซ่อม</p>
+        <div class="note">
+          <p data-th-html="<b>ข้อควรจำ</b> — คำตอบเป็นการประเมินจากสิ่งที่เล่า ไม่ใช่การตรวจจริง อาการเดียวกันเกิดได้จากหลายสาเหตุ ให้ใช้เป็นตัวช่วยตั้งต้น ไม่ใช่ข้อสรุปสุดท้าย"
+             data-en-html="<b>Remember</b> — this is an assessment based on what you described, not a physical inspection. The same symptom can have several causes. Use it as a starting point, not a verdict."><b>ข้อควรจำ</b> — คำตอบเป็นการประเมินจากสิ่งที่เล่า ไม่ใช่การตรวจจริง อาการเดียวกันเกิดได้จากหลายสาเหตุ ให้ใช้เป็นตัวช่วยตั้งต้น ไม่ใช่ข้อสรุปสุดท้าย</p>
+        </div>
+      </div>
+
+      <h2 id="sound" class="rv" data-th="5 · อัดเสียงและวัดอาการสั่น" data-en="5 · Sound and vibration">5 · อัดเสียงและวัดอาการสั่น</h2>
+      <div class="rv">
+        <h3 data-th="อัดเสียงยังไงให้ใช้ได้" data-en="Recording a useful clip">อัดเสียงยังไงให้ใช้ได้</h3>
+        <ul>
+          <li data-th="ปิดแอร์ ปิดเพลง ปิดกระจก แล้วค่อยอัด" data-en="Turn off the aircon, the music, and close the windows first">ปิดแอร์ ปิดเพลง ปิดกระจก แล้วค่อยอัด</li>
+          <li data-th="อัดตอนที่เสียงดังจริง ๆ ประมาณ 5–10 วินาทีพอ" data-en="Record while the noise is actually happening — five to ten seconds is enough">อัดตอนที่เสียงดังจริง ๆ ประมาณ 5–10 วินาทีพอ</li>
+          <li data-th="ถ้าเสียงมาจากด้านใดด้านหนึ่ง เอาไมค์เข้าใกล้ด้านนั้น" data-en="If it comes from one side, hold the microphone nearer that side">ถ้าเสียงมาจากด้านใดด้านหนึ่ง เอาไมค์เข้าใกล้ด้านนั้น</li>
+        </ul>
+        <h3 data-th="วัดอาการสั่นยังไง" data-en="Measuring a vibration">วัดอาการสั่นยังไง</h3>
+        <ul>
+          <li data-th="กดเริ่มวัดตอนจอดอยู่ แล้ววางมือถือไว้นิ่ง ๆ ในรถ" data-en="Start the measurement while parked, then leave the phone still in the car">กดเริ่มวัดตอนจอดอยู่ แล้ววางมือถือไว้นิ่ง ๆ ในรถ</li>
+          <li data-th="ขับตามปกติผ่านช่วงความเร็วที่รู้สึกว่าสั่น" data-en="Drive normally through the speed where you feel it">ขับตามปกติผ่านช่วงความเร็วที่รู้สึกว่าสั่น</li>
+          <li data-th="จอดก่อนแล้วค่อยดูผล" data-en="Stop before you look at the result">จอดก่อนแล้วค่อยดูผล</li>
+        </ul>
+        <div class="note">
+          <p data-th-html="<b>ความปลอดภัยมาก่อน</b> — ห้ามจับมือถือ ห้ามอ่านผล และห้ามพิมพ์ระหว่างขับ ตั้งค่าให้เสร็จก่อนออกรถทุกครั้ง"
+             data-en-html="<b>Safety first</b> — do not hold the phone, read results, or type while driving. Set everything up before you move off."><b>ความปลอดภัยมาก่อน</b> — ห้ามจับมือถือ ห้ามอ่านผล และห้ามพิมพ์ระหว่างขับ ตั้งค่าให้เสร็จก่อนออกรถทุกครั้ง</p>
+        </div>
+      </div>
+
+      <h2 id="quote" class="rv" data-th="6 · ตรวจใบเสนอราคา" data-en="6 · Checking a quote">6 · ตรวจใบเสนอราคา</h2>
+      <div class="rv">
+        <ul>
+          <li data-th="ถ่ายให้เห็นทั้งใบ ตรง ๆ ไม่เอียง แสงพอ" data-en="Photograph the whole sheet, square on, with enough light">ถ่ายให้เห็นทั้งใบ ตรง ๆ ไม่เอียง แสงพอ</li>
+          <li data-th="ถ้าใบยาวหลายหน้า ถ่ายทีละหน้าแล้วส่งทั้งหมด" data-en="If it runs to several pages, send them all">ถ้าใบยาวหลายหน้า ถ่ายทีละหน้าแล้วส่งทั้งหมด</li>
+          <li data-th="บอกด้วยว่าเข้าอู่เพราะอาการอะไร ระบบจะได้ดูว่ารายการตรงกับอาการไหม" data-en="Say why you went in — then it can check whether the lines match the symptom">บอกด้วยว่าเข้าอู่เพราะอาการอะไร ระบบจะได้ดูว่ารายการตรงกับอาการไหม</li>
+        </ul>
+        <p data-th="ผลที่ได้จะแยกเป็นรายการ พร้อมเหตุผลว่าทำไมถึงคิดว่าอันนี้ถึงรอบแล้ว หรือทำไมถึงควรถามเพิ่ม เอาเหตุผลนั้นไปคุยกับช่างได้ตรง ๆ"
+           data-en="You get a line-by-line read with the reason for each call — why something looks genuinely due, or why it deserves a question. Take those reasons straight to the mechanic.">
+          ผลที่ได้จะแยกเป็นรายการ พร้อมเหตุผลว่าทำไมถึงคิดว่าอันนี้ถึงรอบแล้ว หรือทำไมถึงควรถามเพิ่ม เอาเหตุผลนั้นไปคุยกับช่างได้ตรง ๆ</p>
+      </div>
+
+      <h2 id="remind" class="rv" data-th="7 · ตั้งเตือน" data-en="7 · Reminders">7 · ตั้งเตือน</h2>
+      <div class="rv">
+        <p data-th="ระบบจะเตือนล่วงหน้า 30 วัน 7 วัน และ 1 วัน ก่อนถึงกำหนด สิ่งที่คุณต้องทำมีแค่ใส่วันให้ถูกตั้งแต่แรก"
+           data-en="Warnings arrive 30, 7 and 1 day ahead. All you have to do is put the right dates in once.">
+          ระบบจะเตือนล่วงหน้า 30 วัน 7 วัน และ 1 วัน ก่อนถึงกำหนด สิ่งที่คุณต้องทำมีแค่ใส่วันให้ถูกตั้งแต่แรก</p>
+        <h3 data-th="ถ้าไม่ได้รับแจ้งเตือน" data-en="If nothing arrives">ถ้าไม่ได้รับแจ้งเตือน</h3>
+        <ul>
+          <li data-th="ตรวจว่าอนุญาตให้เว็บส่งการแจ้งเตือนแล้วหรือยัง (ในตั้งค่าเบราว์เซอร์)" data-en="Check that notifications are allowed for the site in your browser settings">ตรวจว่าอนุญาตให้เว็บส่งการแจ้งเตือนแล้วหรือยัง (ในตั้งค่าเบราว์เซอร์)</li>
+          <li data-th="บนมือถือ ถ้าเพิ่มลงหน้าจอโฮมแล้วจะเสถียรกว่าเปิดในแท็บ" data-en="On phones, adding it to the home screen is more reliable than a tab">บนมือถือ ถ้าเพิ่มลงหน้าจอโฮมแล้วจะเสถียรกว่าเปิดในแท็บ</li>
+          <li data-th="ตรวจว่าโหมดห้ามรบกวนไม่ได้เปิดอยู่" data-en="Check that Do Not Disturb is not on">ตรวจว่าโหมดห้ามรบกวนไม่ได้เปิดอยู่</li>
+        </ul>
+      </div>
+
+      <h2 id="park" class="rv" data-th="8 · จำที่จอด" data-en="8 · Parking memory">8 · จำที่จอด</h2>
+      <div class="rv">
+        <p data-th="เปิดครั้งเดียวแล้วลืมไปได้เลย ระบบจะบันทึกจุดจอดให้เองทุกครั้งที่รถหยุด ไม่ต้องกดอะไร ตอนจะกลับไปหารถก็เปิดดูได้ว่าอยู่ตรงไหน จอดมากี่ชั่วโมงแล้ว"
+           data-en="Switch it on once and forget it. The spot is recorded every time the car stops — nothing to press. When you want the car back, it shows where it is and how long it has been there.">
+          เปิดครั้งเดียวแล้วลืมไปได้เลย ระบบจะบันทึกจุดจอดให้เองทุกครั้งที่รถหยุด ไม่ต้องกดอะไร ตอนจะกลับไปหารถก็เปิดดูได้ว่าอยู่ตรงไหน จอดมากี่ชั่วโมงแล้ว</p>
+        <p data-th="ถ้าไม่อยากใช้ ปิดได้ในหน้าตั้งค่า เมื่อปิดแล้วระบบจะไม่ขอตำแหน่งอีกเลย"
+           data-en="If you would rather not, turn it off in settings — location is then never requested again.">
+          ถ้าไม่อยากใช้ ปิดได้ในหน้าตั้งค่า เมื่อปิดแล้วระบบจะไม่ขอตำแหน่งอีกเลย</p>
+      </div>
+
+      <h2 id="book" class="rv" data-th="9 · สมุดประวัติรถ" data-en="9 · The logbook">9 · สมุดประวัติรถ</h2>
+      <div class="rv">
+        <p data-th="ทุกครั้งที่เข้าอู่ เปลี่ยนอะไหล่ หรือเติมน้ำมัน ใส่ไว้สักบรรทัด ใช้เวลาไม่ถึงนาที แต่หลังจากนั้นระบบจะใช้ประวัตินี้ตอบคำถามได้แม่นขึ้นมาก และตอนขายต่อคุณมีหลักฐานการดูแลครบ"
+           data-en="Every garage visit, part fitted or tank filled — add a line. It takes under a minute, and afterwards the assistant answers far more accurately. When you sell, you have a complete record of care.">
+          ทุกครั้งที่เข้าอู่ เปลี่ยนอะไหล่ หรือเติมน้ำมัน ใส่ไว้สักบรรทัด ใช้เวลาไม่ถึงนาที แต่หลังจากนั้นระบบจะใช้ประวัตินี้ตอบคำถามได้แม่นขึ้นมาก และตอนขายต่อคุณมีหลักฐานการดูแลครบ</p>
+        <p data-th="อัปเดตเลขไมล์ทุกครั้งที่นึกได้ เพราะรอบเปลี่ยนถ่ายคำนวณจากระยะทางจริง ไม่ใช่จากปฏิทินอย่างเดียว"
+           data-en="Update the odometer whenever you think of it — service intervals are worked out from real distance, not just dates.">
+          อัปเดตเลขไมล์ทุกครั้งที่นึกได้ เพราะรอบเปลี่ยนถ่ายคำนวณจากระยะทางจริง ไม่ใช่จากปฏิทินอย่างเดียว</p>
+      </div>
+
+      <h2 id="tone" class="rv" data-th="10 · ปรับวิธีพูดของผู้ช่วย" data-en="10 · Changing the tone">10 · ปรับวิธีพูดของผู้ช่วย</h2>
+      <div class="rv">
+        <p data-th="เปิดหน้าตั้งค่าของแชต แล้วเลือกสไตล์ที่อยากได้ เปลี่ยนกี่ครั้งก็ได้ มีผลกับข้อความถัดไปทันที"
+           data-en="Open chat settings and pick a style. Change it as often as you like; it applies from the next message.">
+          เปิดหน้าตั้งค่าของแชต แล้วเลือกสไตล์ที่อยากได้ เปลี่ยนกี่ครั้งก็ได้ มีผลกับข้อความถัดไปทันที</p>
+        <table class="tbl">
+          <tr><td data-th="เป็นระเบียบ" data-en="Precise">เป็นระเบียบ</td>
+              <td class="dim" data-th="สั้น ตรงประเด็น เป็นข้อ ๆ เหมาะตอนรีบ" data-en="Short, ordered, to the point — good when you are in a hurry">สั้น ตรงประเด็น เป็นข้อ ๆ เหมาะตอนรีบ</td></tr>
+          <tr><td data-th="เหมือนคนทั่วไป" data-en="Natural">เหมือนคนทั่วไป</td>
+              <td class="dim" data-th="ภาษาพูดปกติ อ่านสบาย" data-en="Ordinary spoken language, easy to read">ภาษาพูดปกติ อ่านสบาย</td></tr>
+          <tr><td data-th="ติดเล่น" data-en="Playful">ติดเล่น</td>
+              <td class="dim" data-th="เป็นกันเองขึ้น เหมือนเพื่อนที่รู้เรื่องรถ" data-en="More relaxed — like a friend who knows cars">เป็นกันเองขึ้น เหมือนเพื่อนที่รู้เรื่องรถ</td></tr>
+          <tr><td data-th="ตลก" data-en="Funny">ตลก</td>
+              <td class="dim" data-th="มีมุกแทรก แต่เนื้อหายังครบเหมือนเดิม" data-en="It will joke, but the content stays complete">มีมุกแทรก แต่เนื้อหายังครบเหมือนเดิม</td></tr>
+        </table>
+        <p style="margin-top:14px"
+           data-th="ไม่ว่าเลือกแบบไหน คำเตือนเรื่องความปลอดภัยจะไม่ถูกตัดทิ้งหรือทำให้เบาลง"
+           data-en="Whichever you choose, safety warnings are never dropped or softened.">
+          ไม่ว่าเลือกแบบไหน คำเตือนเรื่องความปลอดภัยจะไม่ถูกตัดทิ้งหรือทำให้เบาลง</p>
+      </div>
+
+      <h2 id="quota" class="rv" data-th="11 · โควตาการใช้งาน" data-en="11 · Your quota">11 · โควตาการใช้งาน</h2>
+      <div class="rv">
+        <p data-th="โควตานับตามปริมาณงานที่ระบบทำจริง ไม่ใช่จำนวนครั้งที่คุณพิมพ์ คำถามสั้นใช้น้อยมาก ส่วนการอ่านรูปใบเสนอราคาหรือวิเคราะห์ยาว ๆ ใช้มากกว่า"
+           data-en="The quota counts the work actually done, not how many times you type. A short question costs very little; reading a quote image or a long analysis costs more.">
+          โควตานับตามปริมาณงานที่ระบบทำจริง ไม่ใช่จำนวนครั้งที่คุณพิมพ์ คำถามสั้นใช้น้อยมาก ส่วนการอ่านรูปใบเสนอราคาหรือวิเคราะห์ยาว ๆ ใช้มากกว่า</p>
+        <p data-th="ดูยอดคงเหลือได้ในหน้าตั้งค่าของแชต ถ้าใช้หมด ระบบจะบอกตรง ๆ ว่าหมดแล้ว ไม่ตัดบทเงียบ ๆ"
+           data-en="See the balance in chat settings. If you run out it says so plainly rather than quietly cutting you off.">
+          ดูยอดคงเหลือได้ในหน้าตั้งค่าของแชต ถ้าใช้หมด ระบบจะบอกตรง ๆ ว่าหมดแล้ว ไม่ตัดบทเงียบ ๆ</p>
+        <div class="note">
+          <p data-th-html="<b>ช่วงเบต้า</b> — ตอนนี้ใช้ได้ทุกฟีเจอร์โดยไม่มีค่าใช้จ่าย ถ้าจะมีแพ็กเกจแบบเสียเงินในอนาคต เราจะแจ้งล่วงหน้า ไม่ตัดของที่เคยให้ไปแล้วแบบเงียบ ๆ"
+             data-en-html="<b>During beta</b> — everything is free. If paid plans arrive later we will say so in advance; we will not quietly take away what you already had."><b>ช่วงเบต้า</b> — ตอนนี้ใช้ได้ทุกฟีเจอร์โดยไม่มีค่าใช้จ่าย ถ้าจะมีแพ็กเกจแบบเสียเงินในอนาคต เราจะแจ้งล่วงหน้า ไม่ตัดของที่เคยให้ไปแล้วแบบเงียบ ๆ</p>
+        </div>
+      </div>
+
+      <h2 id="offline" class="rv" data-th="12 · ออฟไลน์และการอัปเดต" data-en="12 · Offline and updates">12 · ออฟไลน์และการอัปเดต</h2>
+      <div class="rv">
+        <p data-th="เปิดดูข้อมูลรถ ประวัติ และวันครบกำหนดได้แม้ไม่มีเน็ต แต่การถามผู้ช่วยต้องต่อเน็ต เพราะต้องส่งคำถามออกไปประมวลผล"
+           data-en="Your car details, history and due dates open without a connection. Asking the assistant needs one, because the question has to go out to be processed.">
+          เปิดดูข้อมูลรถ ประวัติ และวันครบกำหนดได้แม้ไม่มีเน็ต แต่การถามผู้ช่วยต้องต่อเน็ต เพราะต้องส่งคำถามออกไปประมวลผล</p>
+        <p data-th="ถ้าเห็นว่าหน้าจอยังเป็นเวอร์ชันเก่า ให้ปิดแท็บทั้งหมดแล้วเปิดใหม่ หรือดึงหน้าจอลงเพื่อรีเฟรช ระบบจะดึงเวอร์ชันล่าสุดมาให้เอง"
+           data-en="If you seem to be on an old version, close every tab and open it again, or pull down to refresh — the latest version is fetched automatically.">
+          ถ้าเห็นว่าหน้าจอยังเป็นเวอร์ชันเก่า ให้ปิดแท็บทั้งหมดแล้วเปิดใหม่ หรือดึงหน้าจอลงเพื่อรีเฟรช ระบบจะดึงเวอร์ชันล่าสุดมาให้เอง</p>
+      </div>
+
+      <h2 id="safety" class="rv" data-th="13 · ความปลอดภัย — อ่านข้อนี้" data-en="13 · Safety — read this one">13 · ความปลอดภัย — อ่านข้อนี้</h2>
+      <div class="rv">
+        <p data-th="Cendon เป็นเครื่องมือช่วยตัดสินใจ ไม่ใช่ช่างและไม่ใช่การตรวจสภาพรถ ถ้าอาการที่เจอเกี่ยวกับเบรก พวงมาลัย ยาง ระบบกันสะเทือน หรือมีควัน มีกลิ่นไหม้ หรือไฟเตือนสีแดงขึ้น ให้หยุดรถในที่ปลอดภัยแล้วเรียกช่าง อย่ารอถามให้จบก่อน"
+           data-en="Cendon is a decision aid, not a mechanic and not an inspection. If the symptom involves brakes, steering, tyres or suspension — or if there is smoke, a burning smell, or a red warning light — stop somewhere safe and call for help. Do not finish the conversation first.">
+          Cendon เป็นเครื่องมือช่วยตัดสินใจ ไม่ใช่ช่างและไม่ใช่การตรวจสภาพรถ ถ้าอาการที่เจอเกี่ยวกับเบรก พวงมาลัย ยาง ระบบกันสะเทือน หรือมีควัน มีกลิ่นไหม้ หรือไฟเตือนสีแดงขึ้น ให้หยุดรถในที่ปลอดภัยแล้วเรียกช่าง อย่ารอถามให้จบก่อน</p>
+        <p data-th="และห้ามใช้งานแอปขณะขับรถทุกกรณี"
+           data-en="And never operate the app while driving.">
+          และห้ามใช้งานแอปขณะขับรถทุกกรณี</p>
+      </div>
+
+      <hr>
+      <div class="rv">
+        <h3 data-th="ยังติดอยู่" data-en="Still stuck?">ยังติดอยู่</h3>
+        <p data-th-html="ดูคำตอบที่พบบ่อยได้ที่ <a href='help.html' style='color:var(--warm-lo)'>ศูนย์ช่วยเหลือ</a> หรือดูรายละเอียดความสามารถแต่ละอย่างที่ <a href='features.html' style='color:var(--warm-lo)'>หน้าความสามารถ</a>"
+           data-en-html="Try the <a href='help.html' style='color:var(--warm-lo)'>help centre</a> for common answers, or read each capability in detail on the <a href='features.html' style='color:var(--warm-lo)'>features page</a>.">
+          ดูคำตอบที่พบบ่อยได้ที่ <a href="help.html" style="color:var(--warm-lo)">ศูนย์ช่วยเหลือ</a> หรือดูรายละเอียดความสามารถแต่ละอย่างที่ <a href="features.html" style="color:var(--warm-lo)">หน้าความสามารถ</a></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="Cendon">{{MARK}}<span class="wm">Cendon</span></a>
+        <p class="dim" style="margin-top:14px;max-width:34ch;font-size:14.6px"
+           data-th="ผู้ช่วยดูแลรถที่จำแทนคุณ อ่านใบเสนอราคาแทนคุณ และเตือนก่อนจะสาย"
+           data-en="A car-care assistant that keeps the record, reads the quote, and warns you before it is late.">
+          ผู้ช่วยดูแลรถที่จำแทนคุณ อ่านใบเสนอราคาแทนคุณ และเตือนก่อนจะสาย</p>
+      </div>
+      <div>
+        <h4 data-th="ผลิตภัณฑ์" data-en="Product">ผลิตภัณฑ์</h4>
+        <a href="features.html" data-th="ความสามารถทั้งหมด" data-en="What it does">ความสามารถทั้งหมด</a>
+        <a href="guide.html" data-th="คู่มือใช้งาน" data-en="User guide">คู่มือใช้งาน</a>
+        <a href="https://spireone.pages.dev/" target="_blank" rel="noopener" data-th="เปิดแอป" data-en="Open the app">เปิดแอป</a>
+      </div>
+      <div>
+        <h4 data-th="บริษัท" data-en="Company">บริษัท</h4>
+        <a href="about.html" data-th="ความเป็นมา" data-en="About us">ความเป็นมา</a>
+        <a href="help.html" data-th="ศูนย์ช่วยเหลือ" data-en="Get help">ศูนย์ช่วยเหลือ</a>
+      </div>
+      <div>
+        <h4 data-th="กฎหมาย" data-en="Legal">กฎหมาย</h4>
+        <a href="terms.html" data-th="เงื่อนไขการให้บริการ" data-en="Terms of Service">เงื่อนไขการให้บริการ</a>
+        <a href="privacy.html" data-th="นโยบายความเป็นส่วนตัว" data-en="Privacy Policy">นโยบายความเป็นส่วนตัว</a>
+      </div>
+    </div>
+    <div class="ft-base">
+      <span>© <span data-year></span> Cendon</span>
+      <span data-th="ช่วงเบต้า — ใช้ได้ทุกฟีเจอร์ฟรี"
+            data-en="Beta — every feature is free during testing">ช่วงเบต้า — ใช้ได้ทุกฟีเจอร์ฟรี</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js" defer></script>
+</body>
+</html>

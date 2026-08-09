@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>นโยบายความเป็นส่วนตัว — Cendon</title>
+<meta name="description" content="เราเก็บอะไร เก็บไปทำไม และคุณสั่งลบได้ยังไง">
+<meta name="theme-color" content="#07080B">
+<meta property="og:title" content="นโยบายความเป็นส่วนตัว — Cendon">
+<meta property="og:description" content="เราเก็บอะไร เก็บไปทำไม และคุณสั่งลบได้ยังไง">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/phasmion-tiny.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/Spire09-Medium.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<!-- ฟอนต์ไทยโหลดแบบไม่บล็อกการวาดหน้า ถ้าโหลดไม่ได้ก็ตกไปใช้ฟอนต์ระบบ -->
+<link rel="stylesheet" media="print" onload="this.media='all'"
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap">
+<noscript><link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap"></noscript>
+<noscript><style>
+  /* ถ้าสคริปต์ไม่ทำงาน เนื้อหาต้องยังอ่านได้ครบ ห้ามหายไปทั้งหน้า */
+  .rv{opacity:1!important;transform:none!important}
+  .pop{opacity:1!important;transform:none!important}
+  .dash{stroke-dashoffset:0!important}
+  .grow{transform:none!important}
+</style></noscript>
+</head>
+<body>
+<a class="skip" href="#main" data-th="ข้ามไปเนื้อหา" data-en="Skip to content">ข้ามไปเนื้อหา</a>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="index.html" aria-label="Cendon">
+      <svg class="mk" viewBox="0 0 200 200" fill="currentColor" aria-hidden="true"><path d="M99.6 83.0 108.3 83.0 111.5 83.1 113.6 83.3 115.0 83.5 115.9 83.7 116.4 83.8 116.6 83.8 116.6 83.8 116.5 83.7 116.4 83.5 116.3 83.3 116.3 83.3 116.5 83.4 116.7 83.9 116.9 84.7 117.2 86.0 117.5 88.0 117.7 90.9 117.9 96.5 117.9 107.5 117.8 111.0 117.6 113.3 117.4 114.9 117.2 116.0 117.0 116.6 116.9 117.0 116.9 117.1 117.0 117.1 117.1 117.0 117.2 117.0 117.2 117.1 117.0 117.2 116.5 117.4 115.7 117.7 114.4 118.0 112.6 118.3 109.8 118.6 105.1 118.7 93.6 118.7 89.5 118.7 87.0 118.5 85.2 118.3 84.0 118.1 83.2 117.9 82.7 117.7 82.4 117.6 82.4 117.6 82.3 117.7 82.3 117.7 82.2 117.6 82.0 117.4 81.8 117.0 81.5 116.1 81.2 114.9 80.9 113.1 80.6 110.5 80.5 106.4 80.4 94.9 80.5 90.1 80.6 87.3 80.8 85.4 81.0 84.0 81.3 83.0 82.0 81.0 L53.4 71.3 52.5 73.3 51.5 76.8 50.7 80.5 50.1 84.4 49.8 88.9 49.6 94.7 49.6 106.7 49.7 112.1 50.0 116.4 50.5 120.3 51.3 124.0 52.3 127.5 53.7 130.9 55.4 134.2 57.5 137.3 59.9 140.1 62.7 142.6 65.7 144.7 68.9 146.6 72.3 148.0 75.9 149.2 79.6 150.0 83.5 150.6 87.9 151.0 93.3 151.2 105.3 151.3 111.2 151.2 115.7 150.9 119.7 150.5 123.5 149.7 127.1 148.7 130.6 147.4 134.0 145.7 137.2 143.6 140.1 141.2 142.8 138.4 145.1 135.4 147.0 132.1 148.6 128.7 149.8 125.1 150.7 121.3 151.4 117.4 151.8 113.1 152.1 107.9 152.1 96.4 152.1 89.8 151.9 85.1 151.4 81.0 150.7 77.1 149.8 73.3 148.5 69.7 146.8 66.2 144.8 62.9 142.4 59.9 139.6 57.1 136.5 54.6 133.2 52.6 129.7 50.9 126.0 49.6 122.3 48.6 118.3 47.9 114.1 47.4 109.1 47.1 100.4 47.0Z"/><path d="M162.3 69.9 162.9 78.9 163.1 93.5 163.0 118.3 162.7 127.3 162.1 133.8 161.3 138.9 160.4 143.0 159.3 146.3 158.2 149.1 156.9 151.3 155.5 153.2 154.0 154.9 152.3 156.4 150.3 157.8 147.8 159.1 144.8 160.3 141.0 161.4 136.4 162.3 130.6 163.1 123.0 163.6 110.9 163.9 84.1 163.9 74.2 163.6 67.3 163.1 61.9 162.4 57.5 161.4 54.0 160.4 51.1 159.2 48.6 157.9 46.6 156.5 44.8 155.0 43.2 153.2 41.8 151.2 40.4 148.7 39.1 145.7 38.0 142.1 37.0 137.6 36.2 132.0 35.6 124.8 35.2 114.1 35.2 86.9 35.4 75.8 35.9 68.4 36.6 62.7 37.5 58.1 38.6 54.4 39.8 51.2 41.1 48.6 42.5 46.4 44.1 44.6 45.9 42.9 47.9 41.3 50.4 39.9 53.3 38.6 56.9 37.4 61.3 36.3 66.7 35.5 73.6 34.8 83.2 34.4 109.6 34.3 122.4 34.5 130.3 34.9 136.4 35.6 142.4 36.7 L146.9 6.8 140.9 5.6 133.0 4.6 123.5 4.0 109.7 3.7 82.9 3.7 71.8 4.1 63.1 4.8 55.6 5.9 48.8 7.4 42.4 9.4 36.6 11.9 31.1 14.9 26.0 18.5 21.5 22.6 17.4 27.3 13.9 32.4 10.9 38.0 8.5 44.0 6.5 50.4 5.0 57.4 3.9 65.2 3.2 74.4 2.9 86.7 2.8 114.3 3.1 126.3 3.8 135.3 4.8 143.1 6.2 150.1 8.1 156.6 10.6 162.7 13.5 168.3 17.1 173.5 21.2 178.3 25.8 182.5 30.9 186.2 36.4 189.3 42.4 191.9 48.9 194.0 55.8 195.6 63.5 196.7 72.4 197.5 83.7 197.9 111.0 198.0 124.3 197.8 133.7 197.3 141.8 196.3 149.0 194.9 155.6 193.1 161.8 190.7 167.6 187.9 173.0 184.4 177.9 180.3 182.3 175.7 186.2 170.7 189.5 165.1 192.2 159.1 194.4 152.7 196.1 145.8 197.4 138.2 198.3 129.6 198.7 118.9 198.9 93.4 198.8 77.9 198.3 68.9Z"/></svg>
+      <span class="wm">Cendon</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html"   data-th="หน้าแรก"    data-en="Home">หน้าแรก</a>
+      <a href="features.html" data-th="ความสามารถ" data-en="What it does">ความสามารถ</a>
+      <a href="guide.html"   data-th="คู่มือใช้งาน" data-en="Guide">คู่มือใช้งาน</a>
+      <a href="about.html"   data-th="ความเป็นมา"  data-en="About">ความเป็นมา</a>
+      <a href="help.html"    data-th="ช่วยเหลือ"   data-en="Help">ช่วยเหลือ</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang" role="group" data-th-aria="เลือกภาษา" data-en-aria="Choose language">
+        <button data-l="th" type="button">ไทย</button><button data-l="en" type="button">EN</button>
+      </div>
+      <a class="btn btn-solid" href="https://spireone.pages.dev/" target="_blank" rel="noopener"
+         data-th="เปิดแอป" data-en="Open the app">เปิดแอป</a>
+      <button class="burger" type="button" aria-expanded="false"
+              data-th-aria="เมนู" data-en-aria="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<section class="sec-tight" style="padding-top:clamp(40px,7vw,76px)">
+  <div class="wrap" style="max-width:78ch">
+    <div class="doc-body rv">
+<p class="eyebrow" data-en="Legal" data-th="ข้อกฎหมาย">Legal</p>
+<h1 data-en="Privacy Policy" data-th="นโยบายความเป็นส่วนตัว">Privacy Policy</h1>
+<p class="lede" data-en="What Cendon collects, why it collects it, who else sees it, and how to get it back or delete it."
+   data-th="Cendon เก็บอะไร เก็บไปทำไม ใครเห็นบ้าง และคุณจะเอาคืนหรือลบทิ้งได้อย่างไร">What Cendon collects, why it collects it, who else sees it, and how to get it back or delete it.</p>
+<p class="updated" data-en="Effective 1 August 2026 · Version 1.0"
+   data-th="มีผลบังคับใช้ 1 สิงหาคม 2569 · เวอร์ชัน 1.0">Effective 1 August 2026 · Version 1.0</p>
+
+<div data-lang="en">
+  <div class="box">
+    <h3>In short</h3>
+    <p>We collect what the product needs to work, and nothing beyond it.
+    <strong>We do not sell your personal data and we do not run advertising.</strong>
+    Photos, recordings and descriptions you submit for diagnosis are sent to an
+    AI provider to produce an answer. You can export everything, and deleting
+    your account deletes it.</p>
+  </div>
+
+  <h2 id="p1">1. Who is responsible</h2>
+  <p><strong>Car Spire Thailand</strong> is the data controller for the personal
+  data described here. Contact:
+  <a class="ln" href="mailto:carspirethailand@gmail.com">carspirethailand@gmail.com</a>.</p>
+
+  <h2 id="p2">2. What we collect and why</h2>
+  <div class="tw"><table>
+    <thead><tr><th>Data</th><th>Why</th><th>Kept</th></tr></thead>
+    <tbody>
+      <tr><td>Name, email, profile photo, sign-in provider</td>
+          <td>To create and secure your account</td>
+          <td>Until you delete your account</td></tr>
+      <tr><td>Phone number (only if you sign in by phone)</td>
+          <td>To verify it is you</td>
+          <td>Until you delete your account</td></tr>
+      <tr><td>Vehicles, mileage, service history, costs, notes</td>
+          <td>The core record the product exists to keep</td>
+          <td>Until you delete the entry or your account</td></tr>
+      <tr><td>Photos, video, audio and documents you upload</td>
+          <td>To diagnose the symptom or read the quotation you asked about</td>
+          <td>Until you delete them</td></tr>
+      <tr><td>Chat messages with the assistant</td>
+          <td>To answer, and to keep the conversation readable later</td>
+          <td>Until you delete them</td></tr>
+      <tr><td>Parking location (only when you save a spot)</td>
+          <td>To show you where the car is</td>
+          <td>Until you clear it or save a new one</td></tr>
+      <tr><td>Push notification token, LINE link, OBD device id</td>
+          <td>To deliver reminders on the channel you chose</td>
+          <td>Until you disconnect that channel</td></tr>
+      <tr><td>Feature usage counts and error logs</td>
+          <td>To enforce quotas fairly and to fix faults</td>
+          <td>Up to 12 months</td></tr>
+    </tbody>
+  </table></div>
+  <p>We do not collect background location. Location is read only at the moment
+  you press save on a parking spot.</p>
+
+  <h2 id="p3">3. Legal basis</h2>
+  <p>Where Thailand's Personal Data Protection Act (PDPA) or the GDPR applies,
+  we rely on: <strong>performance of a contract</strong> for your account and
+  the core record; <strong>consent</strong> for notifications, location and
+  optional integrations, which you can withdraw at any time; and
+  <strong>legitimate interests</strong> for security, abuse prevention and
+  fixing faults.</p>
+
+  <h2 id="p4">4. Artificial intelligence</h2>
+  <p>When you ask a question, describe a symptom, or upload a photo, recording or
+  document for analysis, that content is sent to our AI provider
+  (<strong>Google Gemini</strong>) to generate the answer. Weekly part-price
+  research also runs through this provider, but it uses vehicle models only and
+  contains nothing about you.</p>
+  <p>We do not use your content to train our own models, and we send it under
+  terms that do not permit the provider to train on it.</p>
+  <p>AI output is an estimate. Where a figure is shown, we show how recent it is
+  and how much confidence sits behind it — see clause 2 of our
+  <a class="ln" href="./terms.html">Terms of Service</a> on safety.</p>
+
+  <h2 id="p5">5. Who else processes your data</h2>
+  <ul>
+    <li><strong>Google Firebase</strong> — authentication and sign-in.</li>
+    <li><strong>Google Gemini</strong> — the AI answers described above.</li>
+    <li><strong>Cloudflare</strong> — hosting, the application database and
+    content delivery.</li>
+    <li><strong>LINE</strong> — only if you connect LINE for notifications.</li>
+  </ul>
+  <p>These providers act on our instructions. Some of them process data outside
+  Thailand; where they do, we rely on their standard contractual protections.</p>
+  <p><strong>We do not sell personal data, we do not share it with data brokers,
+  and we do not pass it to advertisers.</strong></p>
+
+  <h2 id="p6">6. Your rights</h2>
+  <p>You may ask us to give you a copy of your data, correct it, delete it,
+  restrict or object to how we use it, or withdraw a consent you gave. Export
+  and account deletion are available in the app under Profile → Account; other
+  requests go to
+  <a class="ln" href="mailto:carspirethailand@gmail.com">carspirethailand@gmail.com</a>
+  and we answer within 30 days.</p>
+  <p>Deleting your account removes your vehicles, records, uploads and chat
+  history. Backups are overwritten within 30 days. We keep only what the law
+  requires us to keep, such as payment records.</p>
+  <p>If you believe we have handled your data wrongly, you may complain to the
+  Personal Data Protection Committee of Thailand, or to your local supervisory
+  authority.</p>
+
+  <h2 id="p7">7. Security</h2>
+  <p>Traffic is encrypted in transit. Access to production data is restricted to
+  the people who need it to operate the Service. No system is perfectly secure;
+  if a breach affects you, we will notify you and the regulator as the law
+  requires.</p>
+
+  <h2 id="p8">8. Storage on your device</h2>
+  <p>We use browser storage rather than advertising cookies. It holds your
+  sign-in session, your language and theme choice, and a cached copy of your
+  vehicles so the app opens without waiting for the network. Clearing site data
+  removes all of it.</p>
+
+  <h2 id="p9">9. Children</h2>
+  <p>Cendon is not intended for children. We do not knowingly collect data
+  from anyone under 18. If you believe a child has given us data, contact us and
+  we will delete it.</p>
+
+  <h2 id="p10">10. Changes</h2>
+  <p>If we change this policy materially we will notify you in the app or by
+  email before the change takes effect, and the version and date above will
+  change.</p>
+
+  <h2 id="p11">11. Contact</h2>
+  <p><a class="ln" href="mailto:carspirethailand@gmail.com">carspirethailand@gmail.com</a>
+  — privacy requests are answered within 30 days, usually much sooner.</p>
+</div>
+
+<div data-lang="th" hidden>
+  <div class="box">
+    <h3>สรุปสั้น</h3>
+    <p>เราเก็บเท่าที่ระบบต้องใช้เพื่อทำงาน ไม่เกินไปกว่านั้น
+    <strong>เราไม่ขายข้อมูลส่วนบุคคลของคุณ และไม่มีระบบโฆษณา</strong>
+    รูป เสียง และคำบรรยายอาการที่คุณส่งมาเพื่อวินิจฉัย จะถูกส่งต่อไปยัง
+    ผู้ให้บริการ AI เพื่อสร้างคำตอบ คุณดาวน์โหลดข้อมูลทั้งหมดออกไปได้
+    และการลบบัญชีคือการลบข้อมูลนั้นจริง</p>
+  </div>
+
+  <h2>1. ใครเป็นผู้รับผิดชอบ</h2>
+  <p><strong>Car Spire Thailand</strong> เป็นผู้ควบคุมข้อมูลส่วนบุคคลที่ระบุไว้ในนโยบายนี้
+  ติดต่อ <a class="ln" href="mailto:carspirethailand@gmail.com">carspirethailand@gmail.com</a></p>
+
+  <h2>2. เราเก็บอะไร และเก็บไปทำไม</h2>
+  <div class="tw"><table>
+    <thead><tr><th>ข้อมูล</th><th>เพื่ออะไร</th><th>เก็บนานแค่ไหน</th></tr></thead>
+    <tbody>
+      <tr><td>ชื่อ อีเมล รูปโปรไฟล์ ผู้ให้บริการที่ใช้ล็อกอิน</td>
+          <td>สร้างบัญชีและรักษาความปลอดภัยของบัญชี</td>
+          <td>จนกว่าคุณจะลบบัญชี</td></tr>
+      <tr><td>เบอร์โทรศัพท์ (เฉพาะกรณีล็อกอินด้วยเบอร์)</td>
+          <td>ยืนยันว่าเป็นคุณจริง</td>
+          <td>จนกว่าคุณจะลบบัญชี</td></tr>
+      <tr><td>ข้อมูลรถ เลขไมล์ ประวัติบำรุงรักษา ค่าใช้จ่าย บันทึก</td>
+          <td>เป็นบันทึกหลักที่ระบบมีไว้เพื่อเก็บให้คุณ</td>
+          <td>จนกว่าคุณจะลบรายการหรือลบบัญชี</td></tr>
+      <tr><td>รูป วิดีโอ เสียง และเอกสารที่คุณอัปโหลด</td>
+          <td>วินิจฉัยอาการหรืออ่านใบเสนอราคาที่คุณถาม</td>
+          <td>จนกว่าคุณจะลบ</td></tr>
+      <tr><td>ข้อความที่คุยกับผู้ช่วย</td>
+          <td>ตอบคำถาม และให้ย้อนอ่านบทสนทนาได้ภายหลัง</td>
+          <td>จนกว่าคุณจะลบ</td></tr>
+      <tr><td>ตำแหน่งที่จอดรถ (เฉพาะตอนที่คุณกดบันทึก)</td>
+          <td>แสดงให้คุณเห็นว่ารถอยู่ตรงไหน</td>
+          <td>จนกว่าจะล้างหรือบันทึกจุดใหม่</td></tr>
+      <tr><td>โทเคนแจ้งเตือน การเชื่อม LINE รหัสกล่อง OBD</td>
+          <td>ส่งการแจ้งเตือนตามช่องทางที่คุณเลือก</td>
+          <td>จนกว่าจะยกเลิกการเชื่อมต่อ</td></tr>
+      <tr><td>จำนวนครั้งการใช้งานและบันทึกข้อผิดพลาด</td>
+          <td>คุมโควตาอย่างเป็นธรรม และแก้ไขข้อบกพร่อง</td>
+          <td>ไม่เกิน 12 เดือน</td></tr>
+    </tbody>
+  </table></div>
+  <p>เราไม่เก็บตำแหน่งแบบทำงานเบื้องหลัง ระบบอ่านตำแหน่งเฉพาะวินาทีที่คุณ
+  กดบันทึกจุดจอดเท่านั้น</p>
+
+  <h2>3. ฐานทางกฎหมาย</h2>
+  <p>ในกรณีที่พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล (PDPA) หรือ GDPR ใช้บังคับ
+  เราอาศัย <strong>การปฏิบัติตามสัญญา</strong> สำหรับบัญชีและบันทึกหลัก
+  <strong>ความยินยอม</strong> สำหรับการแจ้งเตือน ตำแหน่ง และการเชื่อมต่อเสริม
+  ซึ่งคุณถอนได้ทุกเมื่อ และ <strong>ประโยชน์โดยชอบด้วยกฎหมาย</strong>
+  สำหรับความปลอดภัย การป้องกันการใช้งานในทางมิชอบ และการแก้ไขข้อบกพร่อง</p>
+
+  <h2>4. ปัญญาประดิษฐ์</h2>
+  <p>เมื่อคุณถามคำถาม เล่าอาการ หรืออัปโหลดรูป เสียง หรือเอกสารเพื่อให้วิเคราะห์
+  เนื้อหานั้นจะถูกส่งไปยังผู้ให้บริการ AI ของเรา (<strong>Google Gemini</strong>)
+  เพื่อสร้างคำตอบ ส่วนการสำรวจราคาอะไหล่รายสัปดาห์ก็ผ่านผู้ให้บริการรายนี้เช่นกัน
+  แต่ใช้เพียงข้อมูลรุ่นรถ ไม่มีข้อมูลเกี่ยวกับตัวคุณอยู่ในนั้น</p>
+  <p>เราไม่นำเนื้อหาของคุณไปฝึกโมเดลของเราเอง และส่งภายใต้เงื่อนไขที่ไม่อนุญาต
+  ให้ผู้ให้บริการนำไปฝึกโมเดล</p>
+  <p>ผลลัพธ์จาก AI เป็นค่าประมาณ ตัวเลขที่แสดงจะบอกด้วยว่าใหม่แค่ไหน
+  และมีความมั่นใจเท่าไหร่ ดูข้อ 2 เรื่องความปลอดภัยใน
+  <a class="ln" href="./terms.html">เงื่อนไขการให้บริการ</a></p>
+
+  <h2>5. ใครอีกบ้างที่ประมวลผลข้อมูลของคุณ</h2>
+  <ul>
+    <li><strong>Google Firebase</strong> — ระบบยืนยันตัวตนและการเข้าสู่ระบบ</li>
+    <li><strong>Google Gemini</strong> — การตอบด้วย AI ตามที่อธิบายข้างต้น</li>
+    <li><strong>Cloudflare</strong> — ที่เก็บเว็บ ฐานข้อมูล และการกระจายเนื้อหา</li>
+    <li><strong>LINE</strong> — เฉพาะกรณีที่คุณเชื่อม LINE เพื่อรับการแจ้งเตือน</li>
+  </ul>
+  <p>ผู้ให้บริการเหล่านี้ทำงานตามคำสั่งของเรา บางรายประมวลผลข้อมูลนอกประเทศไทย
+  ในกรณีนั้นเราอาศัยมาตรการคุ้มครองตามสัญญามาตรฐานของผู้ให้บริการรายนั้น</p>
+  <p><strong>เราไม่ขายข้อมูลส่วนบุคคล ไม่ส่งต่อให้นายหน้าข้อมูล
+  และไม่ส่งให้ผู้โฆษณา</strong></p>
+
+  <h2>6. สิทธิของคุณ</h2>
+  <p>คุณขอให้เราส่งสำเนาข้อมูลของคุณ แก้ไขให้ถูกต้อง ลบทิ้ง จำกัดหรือคัดค้าน
+  การใช้ข้อมูล หรือถอนความยินยอมที่เคยให้ไว้ได้
+  การดาวน์โหลดข้อมูลและการลบบัญชีทำได้เองในแอปที่ โปรไฟล์ → บัญชี
+  คำขออื่นส่งมาที่
+  <a class="ln" href="mailto:carspirethailand@gmail.com">carspirethailand@gmail.com</a>
+  เราตอบภายใน 30 วัน</p>
+  <p>การลบบัญชีจะลบข้อมูลรถ บันทึก ไฟล์ที่อัปโหลด และประวัติการสนทนา
+  ข้อมูลสำรองจะถูกเขียนทับภายใน 30 วัน เราเก็บไว้เฉพาะสิ่งที่กฎหมายกำหนด
+  ให้ต้องเก็บ เช่น หลักฐานการชำระเงิน</p>
+  <p>หากคุณเห็นว่าเราจัดการข้อมูลของคุณโดยมิชอบ คุณร้องเรียนต่อคณะกรรมการ
+  คุ้มครองข้อมูลส่วนบุคคลของประเทศไทย หรือหน่วยงานกำกับดูแลในประเทศของคุณได้</p>
+
+  <h2>7. ความปลอดภัย</h2>
+  <p>ข้อมูลถูกเข้ารหัสระหว่างการรับส่ง การเข้าถึงข้อมูลจริงจำกัดไว้เฉพาะผู้ที่
+  จำเป็นต้องใช้เพื่อดำเนินงาน ไม่มีระบบใดปลอดภัยสมบูรณ์แบบ
+  หากเกิดเหตุละเมิดที่กระทบคุณ เราจะแจ้งคุณและหน่วยงานกำกับดูแลตามที่กฎหมายกำหนด</p>
+
+  <h2>8. การจัดเก็บบนเครื่องของคุณ</h2>
+  <p>เราใช้พื้นที่จัดเก็บของเบราว์เซอร์ ไม่ใช่คุกกี้โฆษณา
+  ในนั้นมีสถานะการเข้าสู่ระบบ ภาษาและธีมที่คุณเลือก
+  และสำเนาข้อมูลรถไว้ให้แอปเปิดได้โดยไม่ต้องรอเน็ต
+  การล้างข้อมูลเว็บไซต์จะลบทั้งหมดนี้ออก</p>
+
+  <h2>9. เด็ก</h2>
+  <p>Cendon ไม่ได้มีไว้สำหรับเด็ก เราไม่เก็บข้อมูลจากผู้ที่อายุต่ำกว่า 18 ปี
+  โดยเจตนา หากคุณเชื่อว่ามีเด็กให้ข้อมูลกับเรา กรุณาแจ้ง แล้วเราจะลบให้</p>
+
+  <h2>10. การเปลี่ยนแปลง</h2>
+  <p>หากเราแก้ไขนโยบายนี้ในสาระสำคัญ เราจะแจ้งให้ทราบในแอปหรือทางอีเมล
+  ก่อนมีผลบังคับใช้ และเลขเวอร์ชันกับวันที่ด้านบนจะเปลี่ยนตาม</p>
+
+  <h2>11. ติดต่อ</h2>
+  <p><a class="ln" href="mailto:carspirethailand@gmail.com">carspirethailand@gmail.com</a>
+  — คำขอเรื่องข้อมูลส่วนบุคคลตอบภายใน 30 วัน โดยปกติเร็วกว่านั้นมาก</p>
+</div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="Cendon">{{MARK}}<span class="wm">Cendon</span></a>
+        <p class="dim" style="margin-top:14px;max-width:34ch;font-size:14.6px"
+           data-th="ผู้ช่วยดูแลรถที่จำแทนคุณ อ่านใบเสนอราคาแทนคุณ และเตือนก่อนจะสาย"
+           data-en="A car-care assistant that keeps the record, reads the quote, and warns you before it is late.">
+          ผู้ช่วยดูแลรถที่จำแทนคุณ อ่านใบเสนอราคาแทนคุณ และเตือนก่อนจะสาย</p>
+      </div>
+      <div>
+        <h4 data-th="ผลิตภัณฑ์" data-en="Product">ผลิตภัณฑ์</h4>
+        <a href="features.html" data-th="ความสามารถทั้งหมด" data-en="What it does">ความสามารถทั้งหมด</a>
+        <a href="guide.html" data-th="คู่มือใช้งาน" data-en="User guide">คู่มือใช้งาน</a>
+        <a href="https://spireone.pages.dev/" target="_blank" rel="noopener" data-th="เปิดแอป" data-en="Open the app">เปิดแอป</a>
+      </div>
+      <div>
+        <h4 data-th="บริษัท" data-en="Company">บริษัท</h4>
+        <a href="about.html" data-th="ความเป็นมา" data-en="About us">ความเป็นมา</a>
+        <a href="help.html" data-th="ศูนย์ช่วยเหลือ" data-en="Get help">ศูนย์ช่วยเหลือ</a>
+      </div>
+      <div>
+        <h4 data-th="กฎหมาย" data-en="Legal">กฎหมาย</h4>
+        <a href="terms.html" data-th="เงื่อนไขการให้บริการ" data-en="Terms of Service">เงื่อนไขการให้บริการ</a>
+        <a href="privacy.html" aria-current="page" data-th="นโยบายความเป็นส่วนตัว" data-en="Privacy Policy">นโยบายความเป็นส่วนตัว</a>
+      </div>
+    </div>
+    <div class="ft-base">
+      <span>© <span data-year></span> Cendon</span>
+      <span data-th="ช่วงเบต้า — ใช้ได้ทุกฟีเจอร์ฟรี"
+            data-en="Beta — every feature is free during testing">ช่วงเบต้า — ใช้ได้ทุกฟีเจอร์ฟรี</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js" defer></script>
+</body>
+</html>
