@@ -308,6 +308,8 @@ footer.ft{border-top:1px solid var(--line);padding:clamp(40px,6vw,68px) 0 34px;m
   font-weight:500;margin-bottom:14px}
 .ft a{display:block;text-decoration:none;color:var(--dim);font-size:14.6px;padding:4px 0;
   transition:color .2s}
+.ft .brand{display:flex;color:var(--ink);padding:0}
+.ft .brand:hover{color:var(--ink)}
 .ft a:hover{color:var(--warm-lo)}
 .ft-base{display:flex;flex-wrap:wrap;gap:12px 22px;justify-content:space-between;
   margin-top:clamp(30px,5vw,52px);padding-top:22px;border-top:1px solid var(--line);
