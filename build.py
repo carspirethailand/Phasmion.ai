@@ -16,7 +16,7 @@ ROOT = pathlib.Path(__file__).parent
 PARTS = ROOT / 'parts'
 PAGES = ROOT / 'pages'
 
-APP_URL = 'https://spireone.pages.dev/'   # ที่อยู่ของแอปจริง เปลี่ยนตรงนี้ที่เดียว
+APP_URL = 'https://carspirethailand.github.io/Cendon-Beta/index.html'   # ที่อยู่ของแอปจริง เปลี่ยนตรงนี้ที่เดียว
 
 # ตราสัญลักษณ์ Phasmion — อ่านจากไฟล์แล้วฝังเป็น inline SVG
 # ต้อง inline เพราะ <use> ข้ามไฟล์รับ currentColor ไม่ได้ในบางเบราว์เซอร์
@@ -38,17 +38,16 @@ def render(name: str, src: str) -> str:
         desc = bits[1] if len(bits) > 1 else ''
         src = src[m.end():]
 
-    out = HEAD.replace('{{TITLE}}', title).replace('{{DESC}}', desc)
-    out += (NAV.replace('{{PAGE}}', name)
-               .replace('{{APP}}', APP_URL)
-               .replace('{{MARK}}',
-                        '<svg class="mk" viewBox="0 0 200 200" fill="currentColor" '
-                        'aria-hidden="true">' + MARK_INNER + '</svg>'))
-    out += src
-    out = out.replace('{{MARK}}',
-                      '<svg class="mk" viewBox="0 0 200 200" fill="currentColor" '
-                      'aria-hidden="true">' + MARK_INNER + '</svg>')
-    out += FOOT.replace('{{APP}}', APP_URL)
+    # ต่อหน้าให้ครบก่อน แล้วค่อยแทนโทเคนทีเดียวตอนท้าย
+    # ของเดิมแทน {{MARK}} ก่อนต่อ footer ตัวในท้ายเว็บเลยหลุดออกมาเป็นข้อความ
+    out = (HEAD.replace('{{TITLE}}', title).replace('{{DESC}}', desc)
+           + NAV.replace('{{PAGE}}', name)
+           + src
+           + FOOT)
+    out = (out.replace('{{APP}}', APP_URL)
+              .replace('{{MARK}}',
+                       '<svg class="mk" viewBox="0 0 200 200" fill="currentColor" '
+                       'aria-hidden="true">' + MARK_INNER + '</svg>'))
 
     # แทนภาพประกอบ
     def art_sub(mo):
@@ -61,6 +60,9 @@ def render(name: str, src: str) -> str:
     # ทำเครื่องหมายหน้าปัจจุบันในเมนู
     out = out.replace(f'href="{name}.html"', f'href="{name}.html" aria-current="page"', 1) \
         if name != 'index' else out.replace('href="index.html"', 'href="index.html" aria-current="page"', 1)
+    leftover = re.findall(r'\{\{[A-Z:]+\w*\}\}', out)
+    if leftover:
+        raise SystemExit(f'{name}.html ยังมีโทเคนไม่ถูกแทน: {sorted(set(leftover))}')
     return out
 
 
